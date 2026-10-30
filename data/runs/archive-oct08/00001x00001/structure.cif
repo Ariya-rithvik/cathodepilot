@@ -1,0 +1,28 @@
+data_Li3Mn1Ni1Co1O6
+_symmetry_space_group_name_H-M   'P 1'
+_symmetry_Int_Tables_number      1
+_cell_length_a       6.15097
+_cell_length_b       5.87796
+_cell_length_c       3.90159
+_cell_angle_alpha    78.89871
+_cell_angle_beta     99.18461
+_cell_angle_gamma    85.95767
+
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Li1    Li      0.03873    0.14512    0.53724
+Li2    Li      0.74584    0.01599    0.19860
+Li3    Li      0.17230    0.00167    0.25573
+Mn1    Mn      0.40245    0.15443    0.09557
+Ni1    Ni      0.73659    0.84802    0.87557
+Co1    Co      0.50072    0.62072    0.95280
+O1    O       0.89623    0.44060    0.31573
+O2    O       0.99663    0.84955    0.06439
+O3    O       0.18951    0.67174    0.56110
+O4    O       0.54997    0.84731    0.46300
+O5    O       0.63513    0.59153    0.35496
+O6    O       0.96742    0.50304    0.73353

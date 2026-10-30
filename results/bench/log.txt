@@ -1,0 +1,806 @@
+CHGNet v0.3.0 initialized with 412,525 parameters
+CHGNet will run on cuda
+  random s0 00001x00001 seed     cell=[4, 5] inserted (19.3s)
+  random s0 00001x00002 seed     cell=[3, 4] inserted (11.4s)
+  random s0 00001x00006 seed     cell=[4, 5] dominated or invalid objectives (9.8s)
+  random s0 00001x00009 seed     cell=[4, 4] inserted (19.98s)
+  random s0 00001x00013 seed     cell=[4, 4] inserted (14.51s)
+  random s0  r00c00 rattle   cell=[7, 5] inserted (20.57s)
+  random s0  r00c01 rattle   cell=[7, 5] duplicate of r00c00 (7.71s)
+  random s0  r00c02 permute  cell=[3, 3] inserted (14.9s)
+  random s0  r00c03 strain   cell=[3, 3] inserted (10.73s)
+  random s0  r00c04 strain   cell=[6, 4] inserted (7.1s)
+  random s0  r00c05 permute  cell=[7, 5] duplicate of r00c00 (6.59s)
+  random s0  r01c00 strain   cell=[7, 5] duplicate of r00c00 (13.72s)
+  random s0  r01c01 strain   cell=[6, 4] inserted (15.72s)
+  random s0  r01c02 strain   cell=[7, 5] duplicate of r00c04 (7.08s)
+  random s0  r01c03 strain   cell=[3, 3] inserted (7.67s)
+  random s0  r01c04 strain   cell=[7, 5] duplicate of r00c00 (7.08s)
+  random s0  r01c05 strain   cell=[3, 4] duplicate of r01c03 (7.04s)
+  random s0  r02c00 strain   cell=[4, 3] inserted (8.87s)
+  random s0  r02c01 permute  cell=[5, 6] inserted (9.7s)
+  random s0  r02c02 rattle   cell=[5, 6] duplicate of r02c01 (10.7s)
+  random s0  r02c03 strain   cell=[3, 3] duplicate of r02c00 (7.0s)
+  random s0  r02c04 strain   cell=[4, 5] inserted (9.95s)
+  random s0  r02c05 permute  cell=[5, 6] inserted (6.24s)
+  random s0  r03c00 strain   cell=[5, 5] duplicate of r02c05 (7.63s)
+  random s0  r03c01 rattle   cell=[3, 3] inserted (19.68s)
+  random s0  r03c02 strain   cell=[6, 5] inserted (7.81s)
+  random s0  r03c03 strain   cell=[2, 3] duplicate of r00c03 (9.9s)
+  random s0  r03c04 strain   cell=[3, 4] duplicate of r01c03 (8.97s)
+  random s0  r03c05 rattle   cell=[6, 5] duplicate of r03c02 (8.94s)
+  random s0  r04c00 strain   cell=[5, 4] duplicate of r01c01 (11.11s)
+  random s0  r04c01 strain   cell=[5, 4] inserted (12.99s)
+  random s0  r04c02 permute  cell=[5, 6] inserted (4.62s)
+  random s0  r04c03 strain   cell=[4, 4] duplicate of r04c01 (15.02s)
+  random s0  r04c04 strain   cell=[2, 3] duplicate of r00c03 (12.56s)
+  random s0  r04c05 rattle   cell=[6, 5] duplicate of r03c02 (8.92s)
+  random s0  r05c00 permute  cell=[7, 5] duplicate of r04c01 (13.7s)
+  random s0  r05c01 strain   cell=[6, 5] duplicate of r03c02 (10.34s)
+  random s0  r05c02 strain   cell=[5, 6] duplicate of 00001x00001 (6.4s)
+  random s0  r05c03 permute  cell=[6, 5] inserted (6.62s)
+  random s0  r05c04 strain   cell=[3, 3] duplicate of r03c01 (17.0s)
+  random s0  r05c05 permute  cell=[6, 5] inserted (8.62s)
+  random s0  r06c00 permute  cell=[4, 6] inserted (6.89s)
+  random s0  r06c01 strain   cell=[6, 5] duplicate of r03c02 (5.91s)
+  random s0  r06c02 rattle   cell=[7, 5] duplicate of r05c03 (9.57s)
+  random s0  r06c03 strain   cell=[4, 5] duplicate of r02c04 (9.4s)
+  random s0  r06c04 permute  cell=[7, 5] duplicate of r00c00 (6.54s)
+  random s0  r06c05 strain   cell=[3, 3] duplicate of r03c01 (15.45s)
+  random s0  r07c00 strain   cell=[6, 4] duplicate of r01c01 (7.28s)
+  random s0  r07c01 strain   cell=[4, 4] inserted (17.62s)
+  random s0  r07c02 rattle   cell=[4, 4] inserted (9.14s)
+  random s0  r07c03 strain   cell=[7, 5] duplicate of r05c05 (9.31s)
+  random s0  r07c04 strain   cell=[7, 5] duplicate of r00c00 (6.31s)
+  random s0  r07c05 permute  cell=[4, 4] dominated or invalid objectives (6.82s)
+  random s0  r08c00 strain   cell=[4, 5] duplicate of r02c04 (9.72s)
+  random s0  r08c01 strain   cell=[7, 5] inserted (9.69s)
+  random s0  r08c02 strain   cell=[7, 5] duplicate of r05c05 (8.53s)
+  random s0  r08c03 permute  cell=[4, 4] inserted (5.08s)
+  random s0  r08c04 strain   cell=[3, 3] duplicate of r05c04 (12.34s)
+  random s0  r08c05 permute  cell=[4, 4] dominated or invalid objectives (6.74s)
+  random s0  r09c00 strain   cell=[7, 5] duplicate of r00c04 (7.83s)
+{"arm": "random", "seed": 0, "evaluations": 60, "coverage": 0.11, "occupied_cells": 11, "moqd_score": 15.259096, "best_voltage": 4.327591101328532, "failed_or_unscored": 0, "duplicates": 32, "unique_valid": 28, "reference_point": [-6.039354832967122, 0.0], "wall_seconds": 614.7}
+  pareto s0 00001x00001 seed     cell=[4, 5] inserted (0.0s)
+  pareto s0 00001x00002 seed     cell=[3, 4] inserted (0.0s)
+  pareto s0 00001x00006 seed     cell=[4, 5] dominated or invalid objectives (0.0s)
+  pareto s0 00001x00009 seed     cell=[4, 4] inserted (0.0s)
+  pareto s0 00001x00013 seed     cell=[4, 4] inserted (0.0s)
+  pareto s0  r00c00 rattle   cell=[7, 5] inserted (20.61s)
+  pareto s0  r00c01 strain   cell=[7, 5] duplicate of r00c00 (6.54s)
+  pareto s0  r00c02 permute  cell=[7, 5] inserted (6.15s)
+  pareto s0  r00c03 rattle   cell=[6, 5] duplicate of r00c02 (9.09s)
+  pareto s0  r00c04 strain   cell=[6, 5] duplicate of r00c00 (7.12s)
+  pareto s0  r00c05 strain   cell=[7, 5] duplicate of r00c02 (6.41s)
+  pareto s0  r01c00 strain   cell=[7, 4] duplicate of r00c00 (5.31s)
+  pareto s0  r01c01 strain   cell=[7, 5] duplicate of r00c00 (6.68s)
+  pareto s0  r01c02 strain   cell=[7, 5] duplicate of r00c02 (7.31s)
+  pareto s0  r01c03 rattle   cell=[6, 5] duplicate of r00c02 (8.94s)
+  pareto s0  r01c04 permute  cell=[7, 5] dominated or invalid objectives (8.24s)
+  pareto s0  r01c05 strain   cell=[7, 5] duplicate of r00c00 (6.21s)
+  pareto s0  r02c00 rattle   cell=[7, 5] duplicate of r00c02 (10.01s)
+  pareto s0  r02c01 strain   cell=[7, 5] duplicate of r00c00 (6.89s)
+  pareto s0  r02c02 permute  cell=[7, 5] duplicate of r00c02 (6.3s)
+  pareto s0  r02c03 strain   cell=[7, 5] duplicate of r00c00 (7.56s)
+  pareto s0  r02c04 permute  cell=[7, 5] duplicate of r01c04 (6.52s)
+  pareto s0  r02c05 strain   cell=[7, 5] duplicate of r00c02 (6.85s)
+  pareto s0  r03c00 strain   cell=[7, 5] duplicate of r00c02 (7.57s)
+  pareto s0  r03c01 strain   cell=[6, 5] duplicate of r00c00 (6.17s)
+  pareto s0  r03c02 strain   cell=[7, 5] duplicate of r00c02 (7.17s)
+  pareto s0  r03c03 strain   cell=[6, 5] duplicate of r00c02 (8.25s)
+  pareto s0  r03c04 strain   cell=[7, 5] duplicate of r00c00 (10.61s)
+  pareto s0  r03c05 rattle   cell=[7, 5] duplicate of r00c00 (7.57s)
+  pareto s0  r04c00 rattle   cell=[7, 5] duplicate of r00c00 (7.27s)
+  pareto s0  r04c01 strain   cell=[7, 5] duplicate of r00c00 (6.3s)
+  pareto s0  r04c02 rattle   cell=[6, 5] duplicate of r00c00 (8.13s)
+  pareto s0  r04c03 strain   cell=[6, 5] duplicate of r00c02 (8.09s)
+  pareto s0  r04c04 strain   cell=[7, 5] duplicate of r00c00 (7.22s)
+  pareto s0  r04c05 strain   cell=[7, 4] duplicate of r00c00 (7.03s)
+  pareto s0  r05c00 rattle   cell=[7, 5] duplicate of r00c02 (8.36s)
+  pareto s0  r05c01 permute  cell=[7, 5] duplicate of r00c00 (6.27s)
+  pareto s0  r05c02 permute  cell=[7, 5] duplicate of r00c02 (5.79s)
+  pareto s0  r05c03 strain   cell=[7, 5] duplicate of r00c01 (7.08s)
+  pareto s0  r05c04 strain   cell=[7, 5] duplicate of r00c00 (10.18s)
+  pareto s0  r05c05 permute  cell=[7, 5] duplicate of r00c02 (6.06s)
+  pareto s0  r06c00 strain   cell=[7, 5] duplicate of r00c00 (7.0s)
+  pareto s0  r06c01 permute  cell=[7, 5] duplicate of r00c02 (7.03s)
+  pareto s0  r06c02 permute  cell=[7, 5] duplicate of r00c00 (6.27s)
+  pareto s0  r06c03 strain   cell=[7, 5] duplicate of r00c00 (7.36s)
+  pareto s0  r06c04 strain   cell=[7, 5] duplicate of r00c02 (6.11s)
+  pareto s0  r06c05 strain   cell=[7, 5] duplicate of r00c00 (7.53s)
+  pareto s0  r07c00 strain   cell=[7, 5] duplicate of r00c00 (7.03s)
+  pareto s0  r07c01 rattle   cell=[7, 5] duplicate of r00c00 (7.96s)
+  pareto s0  r07c02 strain   cell=[7, 5] duplicate of r00c00 (6.98s)
+  pareto s0  r07c03 permute  cell=[7, 5] duplicate of r00c00 (6.39s)
+  pareto s0  r07c04 strain   cell=[7, 5] duplicate of r00c00 (6.55s)
+  pareto s0  r07c05 strain   cell=[7, 5] duplicate of r00c02 (6.32s)
+  pareto s0  r08c00 permute  cell=[7, 5] duplicate of r00c00 (6.05s)
+  pareto s0  r08c01 strain   cell=[7, 5] duplicate of r00c02 (6.53s)
+  pareto s0  r08c02 rattle   cell=[6, 5] duplicate of r00c02 (7.77s)
+  pareto s0  r08c03 permute  cell=[7, 5] duplicate of r01c04 (6.27s)
+  pareto s0  r08c04 strain   cell=[7, 5] duplicate of r00c02 (6.85s)
+  pareto s0  r08c05 strain   cell=[7, 4] duplicate of r00c00 (5.98s)
+  pareto s0  r09c00 permute  cell=[7, 5] duplicate of r00c02 (6.14s)
+{"arm": "pareto", "seed": 0, "evaluations": 60, "coverage": 0.04, "occupied_cells": 4, "moqd_score": 5.370954, "best_voltage": 3.917647202809652, "failed_or_unscored": 0, "duplicates": 52, "unique_valid": 8, "reference_point": [-6.039354832967122, 0.0], "wall_seconds": 406.1}
+  mome s0 00001x00001 seed     cell=[4, 5] inserted (0.0s)
+  mome s0 00001x00002 seed     cell=[3, 4] inserted (0.0s)
+  mome s0 00001x00006 seed     cell=[4, 5] dominated or invalid objectives (0.0s)
+  mome s0 00001x00009 seed     cell=[4, 4] inserted (0.0s)
+  mome s0 00001x00013 seed     cell=[4, 4] inserted (0.0s)
+  mome s0  r00c00 strain   cell=[3, 4] inserted (8.3s)
+  mome s0  r00c01 rattle   cell=[3, 4] duplicate of r00c00 (8.79s)
+  mome s0  r00c02 strain   cell=[4, 4] inserted (8.74s)
+  mome s0  r00c03 rattle   cell=[5, 6] duplicate of 00001x00001 (10.0s)
+  mome s0  r00c04 strain   cell=[3, 4] duplicate of r00c00 (7.81s)
+  mome s0  r00c05 strain   cell=[3, 4] dominated or invalid objectives (6.53s)
+  mome s0  r01c00 strain   cell=[5, 6] inserted (6.67s)
+  mome s0  r01c01 permute  cell=[6, 5] inserted (8.61s)
+  mome s0  r01c02 permute  cell=[4, 4] dominated or invalid objectives (4.19s)
+  mome s0  r01c03 permute  cell=[3, 4] inserted (4.07s)
+  mome s0  r01c04 strain   cell=[6, 5] dominated or invalid objectives (7.59s)
+  mome s0  r01c05 rattle   cell=[4, 4] duplicate of r00c02 (10.36s)
+  mome s0  r02c00 strain   cell=[6, 5] duplicate of r01c01 (6.44s)
+  mome s0  r02c01 strain   cell=[4, 4] duplicate of r00c02 (6.65s)
+  mome s0  r02c02 permute  cell=[3, 4] inserted (6.1s)
+  mome s0  r02c03 strain   cell=[6, 5] duplicate of r01c04 (7.41s)
+  mome s0  r02c04 rattle   cell=[6, 5] duplicate of r01c01 (8.14s)
+  mome s0  r02c05 strain   cell=[2, 4] duplicate of r02c02 (8.49s)
+  mome s0  r03c00 strain   cell=[3, 4] duplicate of r02c02 (6.48s)
+  mome s0  r03c01 strain   cell=[4, 4] duplicate of r00c02 (8.39s)
+  mome s0  r03c02 permute  cell=[5, 6] dominated or invalid objectives (8.52s)
+  mome s0  r03c03 rattle   cell=[6, 5] duplicate of r01c01 (7.72s)
+  mome s0  r03c04 strain   cell=[6, 5] duplicate of r01c01 (7.82s)
+  mome s0  r03c05 strain   cell=[7, 5] duplicate of r01c01 (8.08s)
+  mome s0  r04c00 strain   cell=[5, 6] duplicate of 00001x00001 (8.5s)
+  mome s0  r04c01 strain   cell=[4, 4] duplicate of r00c02 (9.72s)
+  mome s0  r04c02 strain   cell=[6, 5] duplicate of r01c04 (8.31s)
+  mome s0  r04c03 strain   cell=[4, 3] duplicate of r00c02 (10.01s)
+  mome s0  r04c04 permute  cell=[7, 5] inserted (6.0s)
+  mome s0  r04c05 permute  cell=[5, 4] inserted (7.3s)
+  mome s0  r05c00 strain   cell=[3, 4] duplicate of r02c02 (7.9s)
+  mome s0  r05c01 rattle   cell=[6, 5] duplicate of r01c01 (7.96s)
+  mome s0  r05c02 permute  cell=[3, 4] duplicate of r01c03 (6.26s)
+  mome s0  r05c03 strain   cell=[3, 4] duplicate of r02c02 (9.38s)
+  mome s0  r05c04 permute  cell=[5, 5] inserted (8.41s)
+  mome s0  r05c05 rattle   cell=[6, 5] duplicate of r01c01 (8.6s)
+  mome s0  r06c00 strain   cell=[7, 5] inserted (8.99s)
+  mome s0  r06c01 strain   cell=[6, 4] inserted (7.18s)
+  mome s0  r06c02 rattle   cell=[5, 6] duplicate of r00c03 (9.02s)
+  mome s0  r06c03 strain   cell=[6, 5] inserted (6.8s)
+  mome s0  r06c04 strain   cell=[6, 4] duplicate of r01c01 (7.69s)
+  mome s0  r06c05 strain   cell=[6, 5] dominated or invalid objectives (8.53s)
+  mome s0  r07c00 permute  cell=[7, 5] duplicate of r04c04 (10.36s)
+  mome s0  r07c01 strain   cell=[7, 5] duplicate of r06c00 (11.17s)
+  mome s0  r07c02 strain   cell=[6, 4] duplicate of r06c01 (7.9s)
+  mome s0  r07c03 rattle   cell=[6, 4] duplicate of r06c01 (9.4s)
+  mome s0  r07c04 permute  cell=[7, 4] duplicate of r06c00 (7.05s)
+  mome s0  r07c05 strain   cell=[4, 5] duplicate of r02c01 (16.48s)
+  mome s0  r08c00 permute  cell=[3, 4] duplicate of r01c03 (5.06s)
+  mome s0  r08c01 permute  cell=[6, 4] dominated or invalid objectives (6.77s)
+  mome s0  r08c02 strain   cell=[3, 4] dominated or invalid objectives (7.19s)
+  mome s0  r08c03 permute  cell=[6, 5] inserted (9.63s)
+  mome s0  r08c04 strain   cell=[7, 5] duplicate of r08c03 (8.14s)
+  mome s0  r08c05 strain   cell=[6, 5] duplicate of r06c03 (6.14s)
+  mome s0  r09c00 strain   cell=[5, 4] duplicate of r04c05 (9.82s)
+{"arm": "mome", "seed": 0, "evaluations": 60, "coverage": 0.09, "occupied_cells": 9, "moqd_score": 12.704501, "best_voltage": 3.9892045656840005, "failed_or_unscored": 0, "duplicates": 35, "unique_valid": 25, "reference_point": [-6.039354832967122, 0.0], "wall_seconds": 443.6}
+  random s1 00001x00001 seed     cell=[4, 5] inserted (0.0s)
+  random s1 00001x00002 seed     cell=[3, 4] inserted (0.0s)
+  random s1 00001x00006 seed     cell=[4, 5] dominated or invalid objectives (0.0s)
+  random s1 00001x00009 seed     cell=[4, 4] inserted (0.0s)
+  random s1 00001x00013 seed     cell=[4, 4] inserted (0.0s)
+  random s1  r00c00 permute  cell=[3, 3] inserted (14.5s)
+  random s1  r00c01 strain   cell=[4, 3] inserted (14.65s)
+  random s1  r00c02 strain   cell=[7, 5] duplicate of r00c00 (9.85s)
+  random s1  r00c03 strain   cell=[5, 4] inserted (10.49s)
+  random s1  r00c04 permute  cell=[4, 6] inserted (6.69s)
+  random s1  r00c05 strain   cell=[5, 6] inserted (9.3s)
+  random s1  r01c00 strain   cell=[3, 4] duplicate of 00001x00002 (7.53s)
+  random s1  r01c01 rattle   cell=[6, 5] inserted (7.81s)
+  random s1  r01c02 rattle   cell=[6, 5] duplicate of r01c01 (9.03s)
+  random s1  r01c03 permute  cell=[3, 4] dominated or invalid objectives (7.72s)
+  random s1  r01c04 strain   cell=[2, 3] duplicate of r01c00 (10.53s)
+  random s1  r01c05 strain   cell=[4, 4] inserted (9.6s)
+  random s1  r02c00 permute  cell=[4, 4] dominated or invalid objectives (5.54s)
+  random s1  r02c01 permute  cell=[4, 4] inserted (11.39s)
+  random s1  r02c02 strain   cell=[6, 4] duplicate of r00c01 (8.08s)
+  random s1  r02c03 strain   cell=[2, 4] inserted (10.64s)
+  random s1  r02c04 permute  cell=[4, 3] dominated or invalid objectives (11.56s)
+  random s1  r02c05 permute  cell=[4, 4] dominated or invalid objectives (9.51s)
+  random s1  r03c00 strain   cell=[5, 4] inserted (15.5s)
+  random s1  r03c01 strain   cell=[4, 4] duplicate of 00001x00013 (8.04s)
+  random s1  r03c02 strain   cell=[4, 3] duplicate of r02c02 (9.84s)
+  random s1  r03c03 strain   cell=[5, 4] duplicate of r00c03 (13.67s)
+  random s1  r03c04 strain   cell=[4, 5] duplicate of r02c05 (8.93s)
+  random s1  r03c05 strain   cell=[4, 4] duplicate of r01c05 (11.24s)
+  random s1  r04c00 permute  cell=[4, 3] dominated or invalid objectives (8.68s)
+  random s1  r04c01 strain   cell=[7, 5] duplicate of r00c00 (10.16s)
+  random s1  r04c02 strain   cell=[7, 5] duplicate of r01c01 (8.21s)
+  random s1  r04c03 strain   cell=[6, 5] inserted (8.98s)
+  random s1  r04c04 permute  cell=[5, 4] inserted (7.24s)
+  random s1  r04c05 permute  cell=[4, 3] duplicate of r00c01 (11.57s)
+  random s1  r05c00 strain   cell=[4, 4] duplicate of 00001x00013 (9.9s)
+  random s1  r05c01 permute  cell=[5, 4] inserted (12.44s)
+  random s1  r05c02 permute  cell=[3, 3] inserted (6.48s)
+  random s1  r05c03 permute  cell=[3, 4] duplicate of r01c03 (8.02s)
+  random s1  r05c04 permute  cell=[4, 5] dominated or invalid objectives (12.46s)
+  random s1  r05c05 permute  cell=[3, 3] inserted (11.7s)
+  random s1  r06c00 permute  cell=[4, 3] duplicate of r04c00 (8.86s)
+  random s1  r06c01 permute  cell=[4, 4] inserted (5.46s)
+  random s1  r06c02 strain   cell=[5, 4] duplicate of r00c03 (8.18s)
+  random s1  r06c03 permute  cell=[5, 6] dominated or invalid objectives (8.58s)
+  random s1  r06c04 strain   cell=[4, 4] duplicate of r02c00 (8.15s)
+  random s1  r06c05 strain   cell=[7, 5] inserted (9.28s)
+  random s1  r07c00 strain   cell=[4, 5] duplicate of r02c05 (10.62s)
+  random s1  r07c01 strain   cell=[7, 5] duplicate of r05c01 (8.12s)
+  random s1  r07c02 permute  cell=[6, 5] duplicate of r01c01 (5.49s)
+  random s1  r07c03 strain   cell=[4, 5] inserted (8.22s)
+  random s1  r07c04 strain   cell=[3, 4] inserted (10.72s)
+  random s1  r07c05 permute  cell=[5, 5] inserted (7.98s)
+  random s1  r08c00 strain   cell=[2, 4] duplicate of r02c03 (10.48s)
+  random s1  r08c01 strain   cell=[4, 4] inserted (7.51s)
+  random s1  r08c02 strain   cell=[7, 5] duplicate of r00c01 (12.91s)
+  random s1  r08c03 strain   cell=[6, 5] inserted (9.8s)
+  random s1  r08c04 strain   cell=[3, 3] inserted (10.03s)
+  random s1  r08c05 permute  cell=[6, 5] duplicate of r01c01 (5.73s)
+  random s1  r09c00 strain   cell=[7, 5] duplicate of r06c05 (12.14s)
+{"arm": "random", "seed": 1, "evaluations": 60, "coverage": 0.12, "occupied_cells": 12, "moqd_score": 16.394962, "best_voltage": 4.362955888112386, "failed_or_unscored": 0, "duplicates": 25, "unique_valid": 35, "reference_point": [-6.039354832967122, 0.0], "wall_seconds": 525.8}
+  pareto s1 00001x00001 seed     cell=[4, 5] inserted (0.0s)
+  pareto s1 00001x00002 seed     cell=[3, 4] inserted (0.0s)
+  pareto s1 00001x00006 seed     cell=[4, 5] dominated or invalid objectives (0.0s)
+  pareto s1 00001x00009 seed     cell=[4, 4] inserted (0.0s)
+  pareto s1 00001x00013 seed     cell=[4, 4] inserted (0.0s)
+  pareto s1  r00c00 permute  cell=[3, 3] inserted (15.3s)
+  pareto s1  r00c01 strain   cell=[4, 5] inserted (11.49s)
+  pareto s1  r00c02 strain   cell=[4, 3] duplicate of r00c01 (10.55s)
+  pareto s1  r00c03 strain   cell=[5, 4] duplicate of r00c01 (8.04s)
+  pareto s1  r00c04 permute  cell=[4, 5] inserted (7.73s)
+  pareto s1  r00c05 strain   cell=[5, 4] inserted (11.28s)
+  pareto s1  r01c00 permute  cell=[5, 4] dominated or invalid objectives (8.53s)
+  pareto s1  r01c01 permute  cell=[5, 3] inserted (6.41s)
+  pareto s1  r01c02 rattle   cell=[7, 5] inserted (10.8s)
+  pareto s1  r01c03 permute  cell=[7, 5] inserted (9.59s)
+  pareto s1  r01c04 strain   cell=[6, 4] inserted (9.98s)
+  pareto s1  r01c05 permute  cell=[7, 5] duplicate of r01c03 (7.16s)
+  pareto s1  r02c00 strain   cell=[7, 5] duplicate of r01c03 (13.52s)
+  pareto s1  r02c01 strain   cell=[5, 4] duplicate of r01c01 (7.28s)
+  pareto s1  r02c02 permute  cell=[7, 5] duplicate of r01c02 (5.56s)
+  pareto s1  r02c03 strain   cell=[5, 4] duplicate of r01c01 (6.4s)
+  pareto s1  r02c04 permute  cell=[5, 3] duplicate of r01c01 (5.95s)
+  pareto s1  r02c05 strain   cell=[6, 5] duplicate of r01c02 (6.49s)
+  pareto s1  r03c00 permute  cell=[5, 3] duplicate of r01c01 (6.0s)
+  pareto s1  r03c01 strain   cell=[7, 5] duplicate of r01c03 (8.38s)
+  pareto s1  r03c02 strain   cell=[5, 4] duplicate of r00c03 (8.54s)
+  pareto s1  r03c03 permute  cell=[7, 5] duplicate of r01c03 (8.66s)
+  pareto s1  r03c04 permute  cell=[5, 4] dominated or invalid objectives (5.56s)
+  pareto s1  r03c05 permute  cell=[7, 5] duplicate of r01c02 (5.73s)
+  pareto s1  r04c00 strain   cell=[7, 5] duplicate of r01c02 (8.81s)
+  pareto s1  r04c01 permute  cell=[7, 5] duplicate of r01c02 (5.69s)
+  pareto s1  r04c02 rattle   cell=[7, 5] duplicate of r01c02 (9.85s)
+  pareto s1  r04c03 rattle   cell=[7, 5] duplicate of r01c03 (8.26s)
+  pareto s1  r04c04 strain   cell=[6, 5] duplicate of r01c04 (9.11s)
+  pareto s1  r04c05 strain   cell=[7, 5] duplicate of r01c02 (8.55s)
+  pareto s1  r05c00 strain   cell=[7, 4] duplicate of r01c02 (5.2s)
+  pareto s1  r05c01 rattle   cell=[7, 5] duplicate of r01c03 (8.31s)
+  pareto s1  r05c02 strain   cell=[7, 5] duplicate of r01c03 (6.43s)
+  pareto s1  r05c03 strain   cell=[7, 5] duplicate of r01c02 (6.28s)
+  pareto s1  r05c04 strain   cell=[6, 5] duplicate of r01c03 (8.25s)
+  pareto s1  r05c05 rattle   cell=[6, 5] duplicate of r01c02 (7.6s)
+  pareto s1  r06c00 rattle   cell=[7, 5] duplicate of r01c03 (8.55s)
+  pareto s1  r06c01 strain   cell=[5, 4] duplicate of r02c01 (7.68s)
+  pareto s1  r06c02 strain   cell=[7, 4] duplicate of r01c02 (8.34s)
+  pareto s1  r06c03 strain   cell=[7, 5] duplicate of r01c03 (9.8s)
+  pareto s1  r06c04 permute  cell=[7, 5] duplicate of r01c03 (6.81s)
+  pareto s1  r06c05 permute  cell=[7, 5] duplicate of r01c02 (5.6s)
+  pareto s1  r07c00 strain   cell=[7, 5] duplicate of r01c02 (12.95s)
+  pareto s1  r07c01 strain   cell=[7, 5] duplicate of r01c03 (13.54s)
+  pareto s1  r07c02 strain   cell=[7, 5] duplicate of r01c03 (9.44s)
+  pareto s1  r07c03 strain   cell=[6, 5] duplicate of r01c03 (6.87s)
+  pareto s1  r07c04 permute  cell=[7, 5] duplicate of r01c03 (6.78s)
+  pareto s1  r07c05 strain   cell=[7, 4] duplicate of r01c02 (6.39s)
+  pareto s1  r08c00 strain   cell=[7, 5] duplicate of r01c02 (6.78s)
+  pareto s1  r08c01 permute  cell=[5, 4] duplicate of r03c04 (6.21s)
+  pareto s1  r08c02 permute  cell=[7, 5] duplicate of r01c03 (8.98s)
+  pareto s1  r08c03 strain   cell=[7, 5] duplicate of r01c03 (10.26s)
+  pareto s1  r08c04 permute  cell=[7, 5] duplicate of r01c03 (8.96s)
+  pareto s1  r08c05 rattle   cell=[7, 5] duplicate of r01c02 (7.67s)
+  pareto s1  r09c00 permute  cell=[7, 5] duplicate of r01c03 (6.66s)
+{"arm": "pareto", "seed": 1, "evaluations": 60, "coverage": 0.08, "occupied_cells": 8, "moqd_score": 13.218837, "best_voltage": 3.9671823183695474, "failed_or_unscored": 0, "duplicates": 45, "unique_valid": 15, "reference_point": [-6.039354832967122, 0.0], "wall_seconds": 455.6}
+  mome s1 00001x00001 seed     cell=[4, 5] inserted (0.0s)
+  mome s1 00001x00002 seed     cell=[3, 4] inserted (0.0s)
+  mome s1 00001x00006 seed     cell=[4, 5] dominated or invalid objectives (0.0s)
+  mome s1 00001x00009 seed     cell=[4, 4] inserted (0.0s)
+  mome s1 00001x00013 seed     cell=[4, 4] inserted (0.0s)
+  mome s1  r00c00 strain   cell=[4, 3] inserted (10.02s)
+  mome s1  r00c01 strain   cell=[5, 4] inserted (15.36s)
+  mome s1  r00c02 permute  cell=[5, 6] inserted (9.46s)
+  mome s1  r00c03 permute  cell=[5, 6] inserted (9.76s)
+  mome s1  r00c04 permute  cell=[5, 4] inserted (8.1s)
+  mome s1  r00c05 strain   cell=[3, 3] duplicate of 00001x00002 (8.85s)
+  mome s1  r01c00 strain   cell=[3, 3] duplicate of r00c00 (11.73s)
+  mome s1  r01c01 strain   cell=[5, 4] inserted (8.08s)
+  mome s1  r01c02 strain   cell=[5, 6] inserted (8.18s)
+  mome s1  r01c03 permute  cell=[4, 4] inserted (5.5s)
+  mome s1  r01c04 strain   cell=[5, 6] duplicate of r01c02 (8.65s)
+  mome s1  r01c05 permute  cell=[5, 6] inserted (7.21s)
+  mome s1  r02c00 strain   cell=[5, 6] duplicate of r00c03 (8.12s)
+  mome s1  r02c01 rattle   cell=[3, 4] inserted (11.23s)
+  mome s1  r02c02 permute  cell=[5, 4] duplicate of r00c01 (7.45s)
+  mome s1  r02c03 strain   cell=[7, 5] duplicate of r01c01 (7.9s)
+  mome s1  r02c04 permute  cell=[3, 3] inserted (12.45s)
+  mome s1  r02c05 strain   cell=[5, 4] duplicate of r00c04 (8.21s)
+  mome s1  r03c00 strain   cell=[7, 5] duplicate of r01c01 (6.87s)
+  mome s1  r03c01 permute  cell=[3, 3] inserted (7.65s)
+  mome s1  r03c02 permute  cell=[4, 4] duplicate of 00001x00009 (13.15s)
+  mome s1  r03c03 strain   cell=[5, 6] duplicate of r01c05 (7.05s)
+  mome s1  r03c04 permute  cell=[3, 4] dominated or invalid objectives (7.57s)
+  mome s1  r03c05 permute  cell=[4, 3] inserted (9.99s)
+  mome s1  r04c00 permute  cell=[4, 3] dominated or invalid objectives (9.57s)
+  mome s1  r04c01 permute  cell=[5, 4] dominated or invalid objectives (8.25s)
+  mome s1  r04c02 rattle   cell=[3, 3] duplicate of r01c01 (14.74s)
+  mome s1  r04c03 strain   cell=[7, 5] duplicate of r00c04 (7.21s)
+  mome s1  r04c04 strain   cell=[3, 3] duplicate of r01c03 (8.57s)
+  mome s1  r04c05 strain   cell=[7, 5] duplicate of r00c00 (10.54s)
+  mome s1  r05c00 strain   cell=[4, 4] duplicate of r03c05 (8.72s)
+  mome s1  r05c01 permute  cell=[4, 3] inserted (6.12s)
+  mome s1  r05c02 rattle   cell=[5, 4] duplicate of r00c04 (7.83s)
+  mome s1  r05c03 rattle   cell=[4, 3] inserted (17.47s)
+  mome s1  r05c04 permute  cell=[4, 3] dominated or invalid objectives (7.59s)
+  mome s1  r05c05 permute  cell=[3, 4] duplicate of r00c05 (6.54s)
+  mome s1  r06c00 rattle   cell=[7, 5] duplicate of r00c00 (16.2s)
+  mome s1  r06c01 strain   cell=[5, 4] duplicate of r01c01 (8.9s)
+  mome s1  r06c02 rattle   cell=[6, 5] inserted (11.06s)
+  mome s1  r06c03 permute  cell=[4, 3] inserted (6.69s)
+  mome s1  r06c04 strain   cell=[5, 4] duplicate of r01c01 (6.82s)
+  mome s1  r06c05 permute  cell=[3, 4] duplicate of r02c01 (5.58s)
+  mome s1  r07c00 strain   cell=[4, 3] inserted (10.23s)
+  mome s1  r07c01 strain   cell=[4, 3] duplicate of 00001x00002 (14.4s)
+  mome s1  r07c02 strain   cell=[3, 3] inserted (11.2s)
+  mome s1  r07c03 rattle   cell=[6, 5] inserted (7.51s)
+  mome s1  r07c04 permute  cell=[3, 4] duplicate of r03c04 (7.77s)
+  mome s1  r07c05 permute  cell=[4, 3] dominated or invalid objectives (15.52s)
+  mome s1  r08c00 strain   cell=[5, 4] duplicate of r00c04 (7.53s)
+  mome s1  r08c01 strain   cell=[5, 5] inserted (7.97s)
+  mome s1  r08c02 permute  cell=[5, 4] duplicate of r04c03 (4.11s)
+  mome s1  r08c03 strain   cell=[6, 5] duplicate of r07c03 (8.23s)
+  mome s1  r08c04 strain   cell=[5, 4] duplicate of r01c01 (6.78s)
+  mome s1  r08c05 rattle   cell=[3, 3] duplicate of r07c02 (11.56s)
+  mome s1  r09c00 strain   cell=[7, 5] inserted (12.47s)
+{"arm": "mome", "seed": 1, "evaluations": 60, "coverage": 0.1, "occupied_cells": 10, "moqd_score": 13.954805, "best_voltage": 4.324601650238037, "failed_or_unscored": 0, "duplicates": 28, "unique_valid": 32, "reference_point": [-6.039354832967122, 0.0], "wall_seconds": 512.2}
+  random s2 00001x00001 seed     cell=[4, 5] inserted (0.0s)
+  random s2 00001x00002 seed     cell=[3, 4] inserted (0.0s)
+  random s2 00001x00006 seed     cell=[4, 5] dominated or invalid objectives (0.0s)
+  random s2 00001x00009 seed     cell=[4, 4] inserted (0.0s)
+  random s2 00001x00013 seed     cell=[4, 4] inserted (0.0s)
+  random s2  r00c00 strain   cell=[5, 6] inserted (6.33s)
+  random s2  r00c01 strain   cell=[5, 6] inserted (6.05s)
+  random s2  r00c02 permute  cell=[4, 4] dominated or invalid objectives (7.63s)
+  random s2  r00c03 strain   cell=[4, 4] inserted (11.4s)
+  random s2  r00c04 rattle   cell=[3, 4] inserted (11.2s)
+  random s2  r00c05 strain   cell=[4, 4] dominated or invalid objectives (9.45s)
+  random s2  r01c00 strain   cell=[3, 4] dominated or invalid objectives (7.75s)
+  random s2  r01c01 rattle   cell=[3, 4] inserted (10.83s)
+  random s2  r01c02 permute  cell=[3, 4] duplicate of r00c04 (5.25s)
+  random s2  r01c03 permute  cell=[3, 4] dominated or invalid objectives (9.03s)
+  random s2  r01c04 strain   cell=[4, 4] duplicate of r00c03 (7.54s)
+  random s2  r01c05 permute  cell=[5, 6] inserted (4.65s)
+  random s2  r02c00 rattle   cell=[4, 4] duplicate of r00c03 (7.49s)
+  random s2  r02c01 permute  cell=[4, 5] duplicate of 00001x00006 (5.09s)
+  random s2  r02c02 strain   cell=[5, 6] duplicate of r00c00 (8.78s)
+  random s2  r02c03 strain   cell=[7, 5] inserted (8.0s)
+  random s2  r02c04 strain   cell=[5, 6] duplicate of r00c02 (11.35s)
+  random s2  r02c05 strain   cell=[4, 6] duplicate of 00001x00006 (9.83s)
+  random s2  r03c00 strain   cell=[2, 3] inserted (10.04s)
+  random s2  r03c01 rattle   cell=[4, 5] dominated or invalid objectives (16.74s)
+  random s2  r03c02 rattle   cell=[6, 5] inserted (10.21s)
+  random s2  r03c03 permute  cell=[4, 5] dominated or invalid objectives (8.06s)
+  random s2  r03c04 rattle   cell=[4, 5] duplicate of r00c05 (8.48s)
+  random s2  r03c05 rattle   cell=[7, 5] duplicate of r02c03 (8.9s)
+  random s2  r04c00 strain   cell=[6, 5] duplicate of r03c02 (8.18s)
+  random s2  r04c01 permute  cell=[5, 6] duplicate of r00c01 (3.5s)
+  random s2  r04c02 strain   cell=[4, 5] dominated or invalid objectives (15.6s)
+  random s2  r04c03 permute  cell=[4, 5] dominated or invalid objectives (6.3s)
+  random s2  r04c04 permute  cell=[3, 3] inserted (6.63s)
+  random s2  r04c05 permute  cell=[3, 4] duplicate of r01c03 (9.18s)
+  random s2  r05c00 permute  cell=[4, 4] dominated or invalid objectives (8.56s)
+  random s2  r05c01 strain   cell=[3, 3] inserted (7.04s)
+  random s2  r05c02 strain   cell=[4, 4] duplicate of r04c03 (12.72s)
+  random s2  r05c03 strain   cell=[3, 4] duplicate of r01c01 (6.99s)
+  random s2  r05c04 rattle   cell=[6, 5] duplicate of r03c02 (11.11s)
+  random s2  r05c05 strain   cell=[4, 4] dominated or invalid objectives (8.84s)
+  random s2  r06c00 strain   cell=[3, 4] duplicate of r01c01 (8.05s)
+  random s2  r06c01 strain   cell=[4, 4] dominated or invalid objectives (8.7s)
+  random s2  r06c02 permute  cell=[4, 4] duplicate of r05c05 (7.85s)
+  random s2  r06c03 rattle   cell=[3, 3] inserted (12.01s)
+  random s2  r06c04 strain   cell=[4, 5] dominated or invalid objectives (18.37s)
+  random s2  r06c05 strain   cell=[5, 6] duplicate of r00c00 (7.66s)
+  random s2  r07c00 strain   cell=[7, 5] inserted (10.55s)
+  random s2  r07c01 rattle   cell=[4, 4] duplicate of r01c03 (14.43s)
+  random s2  r07c02 permute  cell=[5, 6] dominated or invalid objectives (10.87s)
+  random s2  r07c03 permute  cell=[3, 4] dominated or invalid objectives (8.43s)
+  random s2  r07c04 permute  cell=[4, 4] duplicate of r01c03 (7.79s)
+  random s2  r07c05 permute  cell=[3, 4] duplicate of r01c01 (6.71s)
+  random s2  r08c00 strain   cell=[5, 6] dominated or invalid objectives (7.53s)
+  random s2  r08c01 permute  cell=[4, 5] duplicate of 00001x00006 (6.4s)
+  random s2  r08c02 strain   cell=[4, 4] duplicate of r05c05 (7.82s)
+  random s2  r08c03 permute  cell=[4, 5] dominated or invalid objectives (11.04s)
+  random s2  r08c04 rattle   cell=[3, 3] duplicate of 00001x00002 (10.5s)
+  random s2  r08c05 strain   cell=[4, 4] duplicate of r00c03 (7.25s)
+  random s2  r09c00 rattle   cell=[7, 5] duplicate of r07c00 (7.75s)
+{"arm": "random", "seed": 2, "evaluations": 60, "coverage": 0.08, "occupied_cells": 8, "moqd_score": 11.915742, "best_voltage": 4.242056687672933, "failed_or_unscored": 0, "duplicates": 26, "unique_valid": 34, "reference_point": [-6.0389453887939455, 0.0], "wall_seconds": 494.6}
+  pareto s2 00001x00001 seed     cell=[4, 5] inserted (0.0s)
+  pareto s2 00001x00002 seed     cell=[3, 4] inserted (0.0s)
+  pareto s2 00001x00006 seed     cell=[4, 5] dominated or invalid objectives (0.0s)
+  pareto s2 00001x00009 seed     cell=[4, 4] inserted (0.0s)
+  pareto s2 00001x00013 seed     cell=[4, 4] inserted (0.0s)
+  pareto s2  r00c00 strain   cell=[6, 4] inserted (10.39s)
+  pareto s2  r00c01 permute  cell=[6, 4] dominated or invalid objectives (9.94s)
+  pareto s2  r00c02 strain   cell=[5, 4] duplicate of r00c00 (8.05s)
+  pareto s2  r00c03 permute  cell=[6, 4] duplicate of r00c01 (10.05s)
+  pareto s2  r00c04 strain   cell=[6, 4] duplicate of r00c00 (10.28s)
+  pareto s2  r00c05 strain   cell=[5, 4] duplicate of r00c00 (8.58s)
+  pareto s2  r01c00 rattle   cell=[6, 4] duplicate of r00c00 (8.04s)
+  pareto s2  r01c01 strain   cell=[7, 5] duplicate of r00c00 (9.09s)
+  pareto s2  r01c02 strain   cell=[7, 5] duplicate of r00c00 (7.53s)
+  pareto s2  r01c03 strain   cell=[7, 5] duplicate of r00c00 (8.21s)
+  pareto s2  r01c04 permute  cell=[6, 4] duplicate of r00c01 (9.79s)
+  pareto s2  r01c05 strain   cell=[7, 5] duplicate of r00c00 (7.52s)
+  pareto s2  r02c00 permute  cell=[6, 4] duplicate of r00c01 (9.42s)
+  pareto s2  r02c01 strain   cell=[7, 5] duplicate of r00c00 (7.75s)
+  pareto s2  r02c02 rattle   cell=[6, 4] duplicate of r00c00 (6.6s)
+  pareto s2  r02c03 permute  cell=[6, 4] duplicate of r00c01 (9.42s)
+  pareto s2  r02c04 rattle   cell=[6, 4] duplicate of r00c00 (7.33s)
+  pareto s2  r02c05 strain   cell=[5, 4] duplicate of r00c00 (7.37s)
+  pareto s2  r03c00 strain   cell=[7, 5] duplicate of r00c00 (11.67s)
+  pareto s2  r03c01 strain   cell=[6, 4] duplicate of r00c00 (8.02s)
+  pareto s2  r03c02 strain   cell=[5, 4] duplicate of r00c00 (6.67s)
+  pareto s2  r03c03 strain   cell=[5, 4] duplicate of r00c00 (6.04s)
+  pareto s2  r03c04 strain   cell=[5, 4] duplicate of r00c00 (7.29s)
+  pareto s2  r03c05 strain   cell=[6, 5] duplicate of r03c04 (8.1s)
+  pareto s2  r04c00 strain   cell=[7, 5] duplicate of r00c00 (8.02s)
+  pareto s2  r04c01 strain   cell=[6, 4] duplicate of r00c00 (8.14s)
+  pareto s2  r04c02 strain   cell=[5, 4] duplicate of r00c00 (7.13s)
+  pareto s2  r04c03 strain   cell=[5, 4] duplicate of r00c00 (6.74s)
+  pareto s2  r04c04 permute  cell=[6, 4] duplicate of r00c01 (10.07s)
+  pareto s2  r04c05 rattle   cell=[6, 4] duplicate of r00c00 (7.84s)
+  pareto s2  r05c00 permute  cell=[6, 4] inserted (4.77s)
+  pareto s2  r05c01 rattle   cell=[6, 4] duplicate of r05c00 (8.67s)
+  pareto s2  r05c02 permute  cell=[6, 4] duplicate of r05c00 (5.16s)
+  pareto s2  r05c03 permute  cell=[6, 4] duplicate of r05c00 (4.95s)
+  pareto s2  r05c04 permute  cell=[6, 4] inserted (6.28s)
+  pareto s2  r05c05 permute  cell=[6, 4] duplicate of r00c01 (9.68s)
+  pareto s2  r06c00 permute  cell=[6, 4] duplicate of r05c00 (5.34s)
+  pareto s2  r06c01 strain   cell=[7, 5] duplicate of r00c00 (9.06s)
+  pareto s2  r06c02 strain   cell=[5, 4] duplicate of r05c04 (10.32s)
+  pareto s2  r06c03 strain   cell=[6, 4] duplicate of r05c00 (6.29s)
+  pareto s2  r06c04 strain   cell=[5, 4] duplicate of r00c00 (7.24s)
+  pareto s2  r06c05 strain   cell=[7, 5] duplicate of r05c00 (7.83s)
+  pareto s2  r07c00 rattle   cell=[5, 4] duplicate of r00c00 (8.29s)
+  pareto s2  r07c01 permute  cell=[6, 4] inserted (6.3s)
+  pareto s2  r07c02 strain   cell=[5, 4] duplicate of r00c00 (6.68s)
+  pareto s2  r07c03 strain   cell=[7, 5] duplicate of r00c00 (7.67s)
+  pareto s2  r07c04 strain   cell=[7, 5] duplicate of r05c04 (8.05s)
+  pareto s2  r07c05 strain   cell=[5, 4] duplicate of r05c00 (5.33s)
+  pareto s2  r08c00 strain   cell=[7, 5] duplicate of r07c01 (8.68s)
+  pareto s2  r08c01 strain   cell=[7, 5] duplicate of r00c00 (9.04s)
+  pareto s2  r08c02 strain   cell=[7, 5] duplicate of r00c00 (10.72s)
+  pareto s2  r08c03 strain   cell=[7, 5] duplicate of r07c01 (8.41s)
+  pareto s2  r08c04 strain   cell=[5, 4] duplicate of r00c00 (6.83s)
+  pareto s2  r08c05 strain   cell=[7, 5] duplicate of r07c01 (10.13s)
+  pareto s2  r09c00 strain   cell=[5, 4] duplicate of r07c01 (8.78s)
+{"arm": "pareto", "seed": 2, "evaluations": 60, "coverage": 0.04, "occupied_cells": 4, "moqd_score": 5.203987, "best_voltage": 4.361136277516683, "failed_or_unscored": 0, "duplicates": 50, "unique_valid": 10, "reference_point": [-6.039354832967122, 0.0], "wall_seconds": 441.6}
+  mome s2 00001x00001 seed     cell=[4, 5] inserted (0.0s)
+  mome s2 00001x00002 seed     cell=[3, 4] inserted (0.0s)
+  mome s2 00001x00006 seed     cell=[4, 5] dominated or invalid objectives (0.0s)
+  mome s2 00001x00009 seed     cell=[4, 4] inserted (0.0s)
+  mome s2 00001x00013 seed     cell=[4, 4] inserted (0.0s)
+  mome s2  r00c00 strain   cell=[2, 4] duplicate of 00001x00002 (10.53s)
+  mome s2  r00c01 strain   cell=[4, 4] duplicate of 00001x00013 (9.71s)
+  mome s2  r00c02 permute  cell=[5, 5] inserted (7.67s)
+  mome s2  r00c03 strain   cell=[6, 5] inserted (8.49s)
+  mome s2  r00c04 strain   cell=[6, 5] duplicate of r00c03 (6.08s)
+  mome s2  r00c05 permute  cell=[5, 5] duplicate of r00c02 (7.99s)
+  mome s2  r01c00 permute  cell=[4, 4] inserted (7.55s)
+  mome s2  r01c01 strain   cell=[6, 5] duplicate of r00c03 (8.4s)
+  mome s2  r01c02 rattle   cell=[7, 5] inserted (8.51s)
+  mome s2  r01c03 strain   cell=[4, 4] duplicate of r01c00 (9.12s)
+  mome s2  r01c04 strain   cell=[6, 5] duplicate of r00c03 (7.07s)
+  mome s2  r01c05 strain   cell=[5, 5] inserted (14.49s)
+  mome s2  r02c00 strain   cell=[5, 6] duplicate of 00001x00001 (9.09s)
+  mome s2  r02c01 strain   cell=[6, 5] duplicate of r01c01 (8.23s)
+  mome s2  r02c02 strain   cell=[7, 5] inserted (7.54s)
+  mome s2  r02c03 rattle   cell=[6, 5] duplicate of r02c02 (8.12s)
+  mome s2  r02c04 strain   cell=[7, 5] duplicate of r01c02 (5.67s)
+  mome s2  r02c05 strain   cell=[7, 5] inserted (13.57s)
+  mome s2  r03c00 permute  cell=[7, 5] duplicate of r01c02 (10.14s)
+  mome s2  r03c01 strain   cell=[2, 4] duplicate of r00c00 (9.2s)
+  mome s2  r03c02 strain   cell=[3, 4] duplicate of r00c00 (8.55s)
+  mome s2  r03c03 permute  cell=[3, 3] inserted (15.39s)
+  mome s2  r03c04 rattle   cell=[7, 5] duplicate of r02c02 (9.87s)
+  mome s2  r03c05 rattle   cell=[6, 5] duplicate of r00c03 (9.53s)
+  mome s2  r04c00 strain   cell=[5, 5] duplicate of r00c02 (6.89s)
+  mome s2  r04c01 strain   cell=[7, 5] duplicate of r02c02 (11.93s)
+  mome s2  r04c02 rattle   cell=[7, 5] duplicate of r02c02 (8.31s)
+  mome s2  r04c03 strain   cell=[6, 5] duplicate of r00c03 (6.71s)
+  mome s2  r04c04 rattle   cell=[6, 5] duplicate of r00c03 (7.45s)
+  mome s2  r04c05 strain   cell=[6, 5] duplicate of r00c03 (8.64s)
+  mome s2  r05c00 permute  cell=[4, 4] inserted (7.85s)
+  mome s2  r05c01 strain   cell=[3, 4] duplicate of r00c00 (8.36s)
+  mome s2  r05c02 strain   cell=[7, 5] duplicate of r02c02 (9.41s)
+  mome s2  r05c03 rattle   cell=[6, 5] duplicate of r00c03 (8.18s)
+  mome s2  r05c04 strain   cell=[7, 5] duplicate of r01c02 (6.69s)
+  mome s2  r05c05 permute  cell=[3, 3] inserted (9.41s)
+  mome s2  r06c00 permute  cell=[4, 4] inserted (17.23s)
+  mome s2  r06c01 rattle   cell=[4, 3] inserted (9.32s)
+  mome s2  r06c02 rattle   cell=[4, 3] duplicate of r05c05 (10.19s)
+  mome s2  r06c03 strain   cell=[4, 3] duplicate of r05c05 (13.87s)
+  mome s2  r06c04 rattle   cell=[7, 5] duplicate of r01c02 (8.06s)
+  mome s2  r06c05 strain   cell=[4, 3] duplicate of r06c01 (10.71s)
+  mome s2  r07c00 strain   cell=[7, 5] duplicate of r02c02 (8.22s)
+  mome s2  r07c01 permute  cell=[7, 5] inserted (10.06s)
+  mome s2  r07c02 rattle   cell=[4, 4] duplicate of r05c00 (9.02s)
+  mome s2  r07c03 permute  cell=[7, 5] duplicate of r02c02 (7.8s)
+  mome s2  r07c04 strain   cell=[7, 5] duplicate of r01c02 (6.09s)
+  mome s2  r07c05 rattle   cell=[4, 3] duplicate of r05c05 (11.1s)
+  mome s2  r08c00 strain   cell=[7, 5] duplicate of r02c02 (11.63s)
+  mome s2  r08c01 permute  cell=[5, 5] duplicate of r00c02 (7.79s)
+  mome s2  r08c02 strain   cell=[7, 5] duplicate of r02c02 (7.62s)
+  mome s2  r08c03 strain   cell=[7, 5] duplicate of r01c02 (7.85s)
+  mome s2  r08c04 rattle   cell=[4, 3] duplicate of r06c01 (12.48s)
+  mome s2  r08c05 strain   cell=[6, 5] duplicate of r00c03 (9.17s)
+  mome s2  r09c00 strain   cell=[4, 3] duplicate of r06c01 (8.43s)
+{"arm": "mome", "seed": 2, "evaluations": 60, "coverage": 0.08, "occupied_cells": 8, "moqd_score": 12.34734, "best_voltage": 4.237260341644287, "failed_or_unscored": 0, "duplicates": 42, "unique_valid": 18, "reference_point": [-6.039354832967122, 0.0], "wall_seconds": 507.1}
+{
+ "mome": {
+  "coverage": {
+   "mean": 0.09,
+   "sd": 0.01,
+   "n": 3,
+   "values": [
+    0.09,
+    0.1,
+    0.08
+   ]
+  },
+  "occupied_cells": {
+   "mean": 9.0,
+   "sd": 1.0,
+   "n": 3,
+   "values": [
+    9,
+    10,
+    8
+   ]
+  },
+  "moqd_score": {
+   "mean": 11.9136,
+   "sd": 0.7256,
+   "n": 3,
+   "values": [
+    11.617295,
+    12.740452,
+    11.383114
+   ]
+  },
+  "best_voltage": {
+   "mean": 4.1837,
+   "sd": 0.174,
+   "n": 3,
+   "values": [
+    3.9892045656840005,
+    4.324601650238037,
+    4.237260341644287
+   ]
+  },
+  "unique_valid": {
+   "mean": 25.0,
+   "sd": 7.0,
+   "n": 3,
+   "values": [
+    25,
+    32,
+    18
+   ]
+  },
+  "duplicates": {
+   "mean": 35.0,
+   "sd": 7.0,
+   "n": 3,
+   "values": [
+    35,
+    28,
+    42
+   ]
+  },
+  "failed_or_unscored": {
+   "mean": 0.0,
+   "sd": 0.0,
+   "n": 3,
+   "values": [
+    0,
+    0,
+    0
+   ]
+  },
+  "wall_seconds": {
+   "mean": 487.6333,
+   "sd": 38.2191,
+   "n": 3,
+   "values": [
+    443.6,
+    512.2,
+    507.1
+   ]
+  },
+  "runs": 3
+ },
+ "pareto": {
+  "coverage": {
+   "mean": 0.0533,
+   "sd": 0.0231,
+   "n": 3,
+   "values": [
+    0.04,
+    0.08,
+    0.04
+   ]
+  },
+  "occupied_cells": {
+   "mean": 5.3333,
+   "sd": 2.3094,
+   "n": 3,
+   "values": [
+    4,
+    8,
+    4
+   ]
+  },
+  "moqd_score": {
+   "mean": 7.2934,
+   "sd": 4.3026,
+   "n": 3,
+   "values": [
+    4.898383,
+    12.260563,
+    4.721248
+   ]
+  },
+  "best_voltage": {
+   "mean": 4.082,
+   "sd": 0.243,
+   "n": 3,
+   "values": [
+    3.917647202809652,
+    3.9671823183695474,
+    4.361136277516683
+   ]
+  },
+  "unique_valid": {
+   "mean": 11.0,
+   "sd": 3.6056,
+   "n": 3,
+   "values": [
+    8,
+    15,
+    10
+   ]
+  },
+  "duplicates": {
+   "mean": 49.0,
+   "sd": 3.6056,
+   "n": 3,
+   "values": [
+    52,
+    45,
+    50
+   ]
+  },
+  "failed_or_unscored": {
+   "mean": 0.0,
+   "sd": 0.0,
+   "n": 3,
+   "values": [
+    0,
+    0,
+    0
+   ]
+  },
+  "wall_seconds": {
+   "mean": 434.4333,
+   "sd": 25.5163,
+   "n": 3,
+   "values": [
+    406.1,
+    455.6,
+    441.6
+   ]
+  },
+  "runs": 3
+ },
+ "random": {
+  "coverage": {
+   "mean": 0.1033,
+   "sd": 0.0208,
+   "n": 3,
+   "values": [
+    0.11,
+    0.12,
+    0.08
+   ]
+  },
+  "occupied_cells": {
+   "mean": 10.3333,
+   "sd": 2.0817,
+   "n": 3,
+   "values": [
+    11,
+    12,
+    8
+   ]
+  },
+  "moqd_score": {
+   "mean": 13.2639,
+   "sd": 2.1004,
+   "n": 3,
+   "values": [
+    13.917291,
+    14.959926,
+    10.914369
+   ]
+  },
+  "best_voltage": {
+   "mean": 4.3109,
+   "sd": 0.0622,
+   "n": 3,
+   "values": [
+    4.327591101328532,
+    4.362955888112386,
+    4.242056687672933
+   ]
+  },
+  "unique_valid": {
+   "mean": 32.3333,
+   "sd": 3.7859,
+   "n": 3,
+   "values": [
+    28,
+    35,
+    34
+   ]
+  },
+  "duplicates": {
+   "mean": 27.6667,
+   "sd": 3.7859,
+   "n": 3,
+   "values": [
+    32,
+    25,
+    26
+   ]
+  },
+  "failed_or_unscored": {
+   "mean": 0.0,
+   "sd": 0.0,
+   "n": 3,
+   "values": [
+    0,
+    0,
+    0
+   ]
+  },
+  "wall_seconds": {
+   "mean": 545.0333,
+   "sd": 62.3173,
+   "n": 3,
+   "values": [
+    614.7,
+    525.8,
+    494.6
+   ]
+  },
+  "runs": 3
+ },
+ "_reference_point": [
+  -6.0706639607747395,
+  0.0
+ ]
+}

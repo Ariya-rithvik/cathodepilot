@@ -1,0 +1,7 @@
+# Enough for the read-only hosted demo (no GPU, no CHGNet)
+fastapi
+uvicorn
+python-multipart
+psutil
+numpy
+openai

@@ -1,0 +1,14 @@
+# Python 3.12. Install a CUDA build of torch first if you have an NVIDIA GPU:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+torch>=2.6
+chgnet==0.4.2
+pymatgen
+numpy
+openai
+fastapi
+uvicorn
+python-multipart
+psutil
+# tests
+pytest
+httpx

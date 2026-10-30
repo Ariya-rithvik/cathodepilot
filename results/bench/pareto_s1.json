@@ -1,0 +1,1766 @@
+{
+ "archive": [
+  {
+   "cell": [
+    3,
+    3
+   ],
+   "id": "r00c00",
+   "objectives": [
+    -6.400300979614258,
+    -3.681926886240641
+   ]
+  },
+  {
+   "cell": [
+    3,
+    4
+   ],
+   "id": "00001x00002",
+   "objectives": [
+    -6.387144088745117,
+    -3.8269921938578286
+   ]
+  },
+  {
+   "cell": [
+    4,
+    4
+   ],
+   "id": "00001x00009",
+   "objectives": [
+    -6.437385559082031,
+    -3.3048453330993652
+   ]
+  },
+  {
+   "cell": [
+    4,
+    4
+   ],
+   "id": "00001x00013",
+   "objectives": [
+    -6.3941396077473955,
+    -3.7308834393819175
+   ]
+  },
+  {
+   "cell": [
+    4,
+    5
+   ],
+   "id": "r00c01",
+   "objectives": [
+    -6.469014485677083,
+    -3.917069911956787
+   ]
+  },
+  {
+   "cell": [
+    4,
+    5
+   ],
+   "id": "r00c04",
+   "objectives": [
+    -6.478566487630208,
+    -3.8843143781026206
+   ]
+  },
+  {
+   "cell": [
+    5,
+    3
+   ],
+   "id": "r01c01",
+   "objectives": [
+    -6.480383555094401,
+    -3.967179775238037
+   ]
+  },
+  {
+   "cell": [
+    5,
+    4
+   ],
+   "id": "r00c05",
+   "objectives": [
+    -6.490542729695638,
+    -3.917863368988037
+   ]
+  },
+  {
+   "cell": [
+    6,
+    4
+   ],
+   "id": "r01c04",
+   "objectives": [
+    -6.520613352457683,
+    -3.66220490137736
+   ]
+  },
+  {
+   "cell": [
+    7,
+    5
+   ],
+   "id": "r01c02",
+   "objectives": [
+    -6.57553227742513,
+    -3.854473272959391
+   ]
+  },
+  {
+   "cell": [
+    7,
+    5
+   ],
+   "id": "r01c03",
+   "objectives": [
+    -6.571815490722656,
+    -3.9027393658955893
+   ]
+  }
+ ],
+ "extra": {
+  "wall_seconds": 455.6
+ },
+ "config": {
+  "arm": "pareto",
+  "seed": 1,
+  "budget": 60,
+  "batch": 6,
+  "descriptors": [
+   {
+    "name": "density",
+    "min": 2.0,
+    "max": 5.5
+   },
+   {
+    "name": "cation_o_bond",
+    "min": 1.7,
+    "max": 2.3
+   }
+  ]
+ },
+ "metrics": {
+  "arm": "pareto",
+  "seed": 1,
+  "evaluations": 60,
+  "coverage": 0.08,
+  "occupied_cells": 8,
+  "moqd_score": 13.218837,
+  "best_voltage": 3.9671823183695474,
+  "failed_or_unscored": 0,
+  "duplicates": 45,
+  "unique_valid": 15,
+  "reference_point": [
+   -6.039354832967122,
+   0.0
+  ]
+ },
+ "history": [
+  {
+   "id": "00001x00001",
+   "round": 0,
+   "operator": "seed",
+   "detail": "seed structure",
+   "parent": null,
+   "formula": "Li3MnCoNiO6",
+   "density": 3.741,
+   "cation_o_bond": 2.045,
+   "objectives": [
+    -6.170358022054036,
+    -3.6253002484639487
+   ],
+   "voltage": 3.6253002484639487,
+   "e_above_hull": null,
+   "energy_per_atom": -6.170358022054036,
+   "cell": [
+    4,
+    5
+   ],
+   "accepted": true,
+   "reason": "inserted",
+   "seconds": 0.0
+  },
+  {
+   "id": "00001x00002",
+   "round": 0,
+   "operator": "seed",
+   "detail": "seed structure",
+   "parent": null,
+   "formula": "Li3MnCoNiO6",
+   "density": 3.1476,
+   "cation_o_bond": 1.9557,
+   "objectives": [
+    -6.387144088745117,
+    -3.8269921938578286
+   ],
+   "voltage": 3.8269921938578286,
+   "e_above_hull": null,
+   "energy_per_atom": -6.387144088745117,
+   "cell": [
+    3,
+    4
+   ],
+   "accepted": true,
+   "reason": "inserted",
+   "seconds": 0.0
+  },
+  {
+   "id": "00001x00006",
+   "round": 0,
+   "operator": "seed",
+   "detail": "seed structure",
+   "parent": null,
+   "formula": "Li3MnCoNiO6",
+   "density": 3.5346,
+   "cation_o_bond": 2.0043,
+   "objectives": [
+    -6.089354832967122,
+    -3.622270107269287
+   ],
+   "voltage": 3.622270107269287,
+   "e_above_hull": null,
+   "energy_per_atom": -6.089354832967122,
+   "cell": [
+    4,
+    5
+   ],
+   "accepted": false,
+   "reason": "dominated or invalid objectives",
+   "seconds": 0.0
+  },
+  {
+   "id": "00001x00009",
+   "round": 0,
+   "operator": "seed",
+   "detail": "seed structure",
+   "parent": null,
+   "formula": "Li3MnCoNiO6",
+   "density": 3.4631,
+   "cation_o_bond": 1.9765,
+   "objectives": [
+    -6.437385559082031,
+    -3.3048453330993652
+   ],
+   "voltage": 3.3048453330993652,
+   "e_above_hull": null,
+   "energy_per_atom": -6.437385559082031,
+   "cell": [
+    4,
+    4
+   ],
+   "accepted": true,
+   "reason": "inserted",
+   "seconds": 0.0
+  },
+  {
+   "id": "00001x00013",
+   "round": 0,
+   "operator": "seed",
+   "detail": "seed structure",
+   "parent": null,
+   "formula": "Li3MnCoNiO6",
+   "density": 3.4677,
+   "cation_o_bond": 1.9419,
+   "objectives": [
+    -6.3941396077473955,
+    -3.7308834393819175
+   ],
+   "voltage": 3.7308834393819175,
+   "e_above_hull": null,
+   "energy_per_atom": -6.3941396077473955,
+   "cell": [
+    4,
+    4
+   ],
+   "accepted": true,
+   "reason": "inserted",
+   "seconds": 0.0
+  },
+  {
+   "id": "r00c00",
+   "round": 0,
+   "operator": "permute",
+   "detail": "swap sites 3 (Mn) and 4 (Ni)",
+   "parent": "00001x00002",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.264,
+   "cation_o_bond": 1.904,
+   "objectives": [
+    -6.400300979614258,
+    -3.681926886240641
+   ],
+   "voltage": 3.681926886240641,
+   "e_above_hull": null,
+   "energy_per_atom": -6.400300979614258,
+   "cell": [
+    3,
+    3
+   ],
+   "accepted": true,
+   "reason": "inserted",
+   "seconds": 15.3
+  },
+  {
+   "id": "r00c01",
+   "round": 0,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.119",
+   "parent": "00001x00009",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.6495,
+   "cation_o_bond": 2.0141,
+   "objectives": [
+    -6.469014485677083,
+    -3.917069911956787
+   ],
+   "voltage": 3.917069911956787,
+   "e_above_hull": null,
+   "energy_per_atom": -6.469014485677083,
+   "cell": [
+    4,
+    5
+   ],
+   "accepted": true,
+   "reason": "inserted",
+   "seconds": 11.49
+  },
+  {
+   "id": "r00c02",
+   "round": 0,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.113",
+   "parent": "r00c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.5227,
+   "cation_o_bond": 1.9274,
+   "objectives": [
+    -6.45871098836263,
+    -3.8774669965108237
+   ],
+   "voltage": 3.8774669965108237,
+   "e_above_hull": null,
+   "energy_per_atom": -6.45871098836263,
+   "cell": [
+    4,
+    3
+   ],
+   "accepted": false,
+   "reason": "duplicate of r00c01",
+   "seconds": 10.55
+  },
+  {
+   "id": "r00c03",
+   "round": 0,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.127",
+   "parent": "r00c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.7682,
+   "cation_o_bond": 1.9776,
+   "objectives": [
+    -6.477826436360677,
+    -3.949507554372152
+   ],
+   "voltage": 3.949507554372152,
+   "e_above_hull": null,
+   "energy_per_atom": -6.477826436360677,
+   "cell": [
+    5,
+    4
+   ],
+   "accepted": false,
+   "reason": "duplicate of r00c01",
+   "seconds": 8.04
+  },
+  {
+   "id": "r00c04",
+   "round": 0,
+   "operator": "permute",
+   "detail": "swap sites 4 (Ni) and 5 (Co)",
+   "parent": "r00c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.6848,
+   "cation_o_bond": 2.0,
+   "objectives": [
+    -6.478566487630208,
+    -3.8843143781026206
+   ],
+   "voltage": 3.8843143781026206,
+   "e_above_hull": null,
+   "energy_per_atom": -6.478566487630208,
+   "cell": [
+    4,
+    5
+   ],
+   "accepted": true,
+   "reason": "inserted",
+   "seconds": 7.73
+  },
+  {
+   "id": "r00c05",
+   "round": 0,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.110",
+   "parent": "r00c04",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.8171,
+   "cation_o_bond": 1.9466,
+   "objectives": [
+    -6.490542729695638,
+    -3.917863368988037
+   ],
+   "voltage": 3.917863368988037,
+   "e_above_hull": null,
+   "energy_per_atom": -6.490542729695638,
+   "cell": [
+    5,
+    4
+   ],
+   "accepted": true,
+   "reason": "inserted",
+   "seconds": 11.28
+  },
+  {
+   "id": "r01c00",
+   "round": 1,
+   "operator": "permute",
+   "detail": "swap sites 3 (Mn) and 5 (Ni)",
+   "parent": "r00c05",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.8595,
+   "cation_o_bond": 1.9428,
+   "objectives": [
+    -6.483700434366862,
+    -3.795889695485433
+   ],
+   "voltage": 3.795889695485433,
+   "e_above_hull": null,
+   "energy_per_atom": -6.483700434366862,
+   "cell": [
+    5,
+    4
+   ],
+   "accepted": false,
+   "reason": "dominated or invalid objectives",
+   "seconds": 8.53
+  },
+  {
+   "id": "r01c01",
+   "round": 1,
+   "operator": "permute",
+   "detail": "swap sites 4 (Co) and 5 (Ni)",
+   "parent": "r00c05",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.9519,
+   "cation_o_bond": 1.9362,
+   "objectives": [
+    -6.480383555094401,
+    -3.967179775238037
+   ],
+   "voltage": 3.967179775238037,
+   "e_above_hull": null,
+   "energy_per_atom": -6.480383555094401,
+   "cell": [
+    5,
+    3
+   ],
+   "accepted": true,
+   "reason": "inserted",
+   "seconds": 6.41
+  },
+  {
+   "id": "r01c02",
+   "round": 1,
+   "operator": "rattle",
+   "detail": "gaussian rattle, sigma = 0.35 A",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4809,
+   "cation_o_bond": 2.0255,
+   "objectives": [
+    -6.57553227742513,
+    -3.854473272959391
+   ],
+   "voltage": 3.854473272959391,
+   "e_above_hull": null,
+   "energy_per_atom": -6.57553227742513,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": true,
+   "reason": "inserted",
+   "seconds": 10.8
+  },
+  {
+   "id": "r01c03",
+   "round": 1,
+   "operator": "permute",
+   "detail": "swap sites 4 (Ni) and 5 (Co)",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4508,
+   "cation_o_bond": 2.0339,
+   "objectives": [
+    -6.571815490722656,
+    -3.9027393658955893
+   ],
+   "voltage": 3.9027393658955893,
+   "e_above_hull": null,
+   "energy_per_atom": -6.571815490722656,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": true,
+   "reason": "inserted",
+   "seconds": 9.59
+  },
+  {
+   "id": "r01c04",
+   "round": 1,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.102",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4009,
+   "cation_o_bond": 1.9933,
+   "objectives": [
+    -6.520613352457683,
+    -3.66220490137736
+   ],
+   "voltage": 3.66220490137736,
+   "e_above_hull": null,
+   "energy_per_atom": -6.520613352457683,
+   "cell": [
+    6,
+    4
+   ],
+   "accepted": true,
+   "reason": "inserted",
+   "seconds": 9.98
+  },
+  {
+   "id": "r01c05",
+   "round": 1,
+   "operator": "permute",
+   "detail": "swap sites 3 (Mn) and 5 (Ni)",
+   "parent": "r01c03",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4744,
+   "cation_o_bond": 2.0293,
+   "objectives": [
+    -6.573750813802083,
+    -3.9091760317484536
+   ],
+   "voltage": 3.9091760317484536,
+   "e_above_hull": null,
+   "energy_per_atom": -6.573750813802083,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 7.16
+  },
+  {
+   "id": "r02c00",
+   "round": 2,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.137",
+   "parent": "r00c05",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4788,
+   "cation_o_bond": 2.0273,
+   "objectives": [
+    -6.572922388712565,
+    -3.9061776796976724
+   ],
+   "voltage": 3.9061776796976724,
+   "e_above_hull": null,
+   "energy_per_atom": -6.572922388712565,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 13.52
+  },
+  {
+   "id": "r02c01",
+   "round": 2,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.145",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.7865,
+   "cation_o_bond": 1.9514,
+   "objectives": [
+    -6.47504997253418,
+    -3.955578009287516
+   ],
+   "voltage": 3.955578009287516,
+   "e_above_hull": null,
+   "energy_per_atom": -6.47504997253418,
+   "cell": [
+    5,
+    4
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c01",
+   "seconds": 7.28
+  },
+  {
+   "id": "r02c02",
+   "round": 2,
+   "operator": "permute",
+   "detail": "swap sites 4 (Co) and 5 (Ni)",
+   "parent": "r01c03",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4689,
+   "cation_o_bond": 2.0276,
+   "objectives": [
+    -6.576447168986003,
+    -3.861922105153402
+   ],
+   "voltage": 3.861922105153402,
+   "e_above_hull": null,
+   "energy_per_atom": -6.576447168986003,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 5.56
+  },
+  {
+   "id": "r02c03",
+   "round": 2,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.044",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.9241,
+   "cation_o_bond": 1.9755,
+   "objectives": [
+    -6.477500279744466,
+    -3.932401180267334
+   ],
+   "voltage": 3.932401180267334,
+   "e_above_hull": null,
+   "energy_per_atom": -6.477500279744466,
+   "cell": [
+    5,
+    4
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c01",
+   "seconds": 6.4
+  },
+  {
+   "id": "r02c04",
+   "round": 2,
+   "operator": "permute",
+   "detail": "swap sites 4 (Co) and 5 (Ni)",
+   "parent": "r00c05",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.9519,
+   "cation_o_bond": 1.9362,
+   "objectives": [
+    -6.480383555094401,
+    -3.9671823183695474
+   ],
+   "voltage": 3.9671823183695474,
+   "e_above_hull": null,
+   "energy_per_atom": -6.480383555094401,
+   "cell": [
+    5,
+    3
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c01",
+   "seconds": 5.95
+  },
+  {
+   "id": "r02c05",
+   "round": 2,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.105",
+   "parent": "r01c02",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.407,
+   "cation_o_bond": 2.0225,
+   "objectives": [
+    -6.575015385945638,
+    -3.8470117251078286
+   ],
+   "voltage": 3.8470117251078286,
+   "e_above_hull": null,
+   "energy_per_atom": -6.575015385945638,
+   "cell": [
+    6,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 6.49
+  },
+  {
+   "id": "r03c00",
+   "round": 3,
+   "operator": "permute",
+   "detail": "swap sites 4 (Co) and 5 (Ni)",
+   "parent": "r00c05",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.9519,
+   "cation_o_bond": 1.9362,
+   "objectives": [
+    -6.480383555094401,
+    -3.967179775238037
+   ],
+   "voltage": 3.967179775238037,
+   "e_above_hull": null,
+   "energy_per_atom": -6.480383555094401,
+   "cell": [
+    5,
+    3
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c01",
+   "seconds": 6.0
+  },
+  {
+   "id": "r03c01",
+   "round": 3,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.134",
+   "parent": "r01c03",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.5069,
+   "cation_o_bond": 2.0241,
+   "objectives": [
+    -6.575333913167317,
+    -3.912052313486735
+   ],
+   "voltage": 3.912052313486735,
+   "e_above_hull": null,
+   "energy_per_atom": -6.575333913167317,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 8.38
+  },
+  {
+   "id": "r03c02",
+   "round": 3,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.108",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.9702,
+   "cation_o_bond": 1.9647,
+   "objectives": [
+    -6.483968734741211,
+    -3.9616993268330893
+   ],
+   "voltage": 3.9616993268330893,
+   "e_above_hull": null,
+   "energy_per_atom": -6.483968734741211,
+   "cell": [
+    5,
+    4
+   ],
+   "accepted": false,
+   "reason": "duplicate of r00c03",
+   "seconds": 8.54
+  },
+  {
+   "id": "r03c03",
+   "round": 3,
+   "operator": "permute",
+   "detail": "swap sites 4 (Ni) and 5 (Co)",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4508,
+   "cation_o_bond": 2.0339,
+   "objectives": [
+    -6.571815490722656,
+    -3.9027393658955893
+   ],
+   "voltage": 3.9027393658955893,
+   "e_above_hull": null,
+   "energy_per_atom": -6.571815490722656,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 8.66
+  },
+  {
+   "id": "r03c04",
+   "round": 3,
+   "operator": "permute",
+   "detail": "swap sites 3 (Mn) and 5 (Co)",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.9482,
+   "cation_o_bond": 1.9416,
+   "objectives": [
+    -6.479815165201823,
+    -3.672311305999756
+   ],
+   "voltage": 3.672311305999756,
+   "e_above_hull": null,
+   "energy_per_atom": -6.479815165201823,
+   "cell": [
+    5,
+    4
+   ],
+   "accepted": false,
+   "reason": "dominated or invalid objectives",
+   "seconds": 5.56
+  },
+  {
+   "id": "r03c05",
+   "round": 3,
+   "operator": "permute",
+   "detail": "swap sites 4 (Co) and 5 (Ni)",
+   "parent": "r01c03",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4689,
+   "cation_o_bond": 2.0276,
+   "objectives": [
+    -6.576447168986003,
+    -3.8619233767191568
+   ],
+   "voltage": 3.8619233767191568,
+   "e_above_hull": null,
+   "energy_per_atom": -6.576447168986003,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 5.73
+  },
+  {
+   "id": "r04c00",
+   "round": 4,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.122",
+   "parent": "r01c02",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.6144,
+   "cation_o_bond": 2.0004,
+   "objectives": [
+    -6.581361134847005,
+    -3.8747140566507974
+   ],
+   "voltage": 3.8747140566507974,
+   "e_above_hull": null,
+   "energy_per_atom": -6.581361134847005,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 8.81
+  },
+  {
+   "id": "r04c01",
+   "round": 4,
+   "operator": "permute",
+   "detail": "swap sites 3 (Mn) and 5 (Co)",
+   "parent": "r01c02",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.5696,
+   "cation_o_bond": 2.0132,
+   "objectives": [
+    -6.5775190989176435,
+    -3.864147345225016
+   ],
+   "voltage": 3.864147345225016,
+   "e_above_hull": null,
+   "energy_per_atom": -6.5775190989176435,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 5.69
+  },
+  {
+   "id": "r04c02",
+   "round": 4,
+   "operator": "rattle",
+   "detail": "gaussian rattle, sigma = 0.35 A",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4888,
+   "cation_o_bond": 2.0241,
+   "objectives": [
+    -6.57768185933431,
+    -3.8643177350362143
+   ],
+   "voltage": 3.8643177350362143,
+   "e_above_hull": null,
+   "energy_per_atom": -6.57768185933431,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 9.85
+  },
+  {
+   "id": "r04c03",
+   "round": 4,
+   "operator": "rattle",
+   "detail": "gaussian rattle, sigma = 0.35 A",
+   "parent": "r01c03",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4657,
+   "cation_o_bond": 2.031,
+   "objectives": [
+    -6.574618021647136,
+    -3.9147543907165527
+   ],
+   "voltage": 3.9147543907165527,
+   "e_above_hull": null,
+   "energy_per_atom": -6.574618021647136,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 8.26
+  },
+  {
+   "id": "r04c04",
+   "round": 4,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.145",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.3594,
+   "cation_o_bond": 2.0263,
+   "objectives": [
+    -6.522584279378255,
+    -3.9234010378519693
+   ],
+   "voltage": 3.9234010378519693,
+   "e_above_hull": null,
+   "energy_per_atom": -6.522584279378255,
+   "cell": [
+    6,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c04",
+   "seconds": 9.11
+  },
+  {
+   "id": "r04c05",
+   "round": 4,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.125",
+   "parent": "r01c02",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.5351,
+   "cation_o_bond": 2.0174,
+   "objectives": [
+    -6.577646255493164,
+    -3.8616906801859536
+   ],
+   "voltage": 3.8616906801859536,
+   "e_above_hull": null,
+   "energy_per_atom": -6.577646255493164,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 8.55
+  },
+  {
+   "id": "r05c00",
+   "round": 5,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.111",
+   "parent": "r01c02",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.5502,
+   "cation_o_bond": 1.9992,
+   "objectives": [
+    -6.579942067464192,
+    -3.869218349456787
+   ],
+   "voltage": 3.869218349456787,
+   "e_above_hull": null,
+   "energy_per_atom": -6.579942067464192,
+   "cell": [
+    7,
+    4
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 5.2
+  },
+  {
+   "id": "r05c01",
+   "round": 5,
+   "operator": "rattle",
+   "detail": "gaussian rattle, sigma = 0.35 A",
+   "parent": "r01c03",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.517,
+   "cation_o_bond": 2.0246,
+   "objectives": [
+    -6.573900858561198,
+    -3.9090641339619956
+   ],
+   "voltage": 3.9090641339619956,
+   "e_above_hull": null,
+   "energy_per_atom": -6.573900858561198,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 8.31
+  },
+  {
+   "id": "r05c02",
+   "round": 5,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.117",
+   "parent": "r01c03",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.5209,
+   "cation_o_bond": 2.0197,
+   "objectives": [
+    -6.574881235758464,
+    -3.9110706647237143
+   ],
+   "voltage": 3.9110706647237143,
+   "e_above_hull": null,
+   "energy_per_atom": -6.574881235758464,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 6.43
+  },
+  {
+   "id": "r05c03",
+   "round": 5,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.143",
+   "parent": "r01c02",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.485,
+   "cation_o_bond": 2.0236,
+   "objectives": [
+    -6.578976313273112,
+    -3.867483933766683
+   ],
+   "voltage": 3.867483933766683,
+   "e_above_hull": null,
+   "energy_per_atom": -6.578976313273112,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 6.28
+  },
+  {
+   "id": "r05c04",
+   "round": 5,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.120",
+   "parent": "r00c05",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.402,
+   "cation_o_bond": 2.041,
+   "objectives": [
+    -6.569854100545247,
+    -3.8950489362080893
+   ],
+   "voltage": 3.8950489362080893,
+   "e_above_hull": null,
+   "energy_per_atom": -6.569854100545247,
+   "cell": [
+    6,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 8.25
+  },
+  {
+   "id": "r05c05",
+   "round": 5,
+   "operator": "rattle",
+   "detail": "gaussian rattle, sigma = 0.35 A",
+   "parent": "r01c02",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.3997,
+   "cation_o_bond": 2.0328,
+   "objectives": [
+    -6.5764923095703125,
+    -3.85861603418986
+   ],
+   "voltage": 3.85861603418986,
+   "e_above_hull": null,
+   "energy_per_atom": -6.5764923095703125,
+   "cell": [
+    6,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 7.6
+  },
+  {
+   "id": "r06c00",
+   "round": 6,
+   "operator": "rattle",
+   "detail": "gaussian rattle, sigma = 0.35 A",
+   "parent": "r01c03",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4615,
+   "cation_o_bond": 2.031,
+   "objectives": [
+    -6.574341456095378,
+    -3.9082032839457193
+   ],
+   "voltage": 3.9082032839457193,
+   "e_above_hull": null,
+   "energy_per_atom": -6.574341456095378,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 8.55
+  },
+  {
+   "id": "r06c01",
+   "round": 6,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.122",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.8169,
+   "cation_o_bond": 1.9484,
+   "objectives": [
+    -6.4732818603515625,
+    -3.915694077809652
+   ],
+   "voltage": 3.915694077809652,
+   "e_above_hull": null,
+   "energy_per_atom": -6.4732818603515625,
+   "cell": [
+    5,
+    4
+   ],
+   "accepted": false,
+   "reason": "duplicate of r02c01",
+   "seconds": 7.68
+  },
+  {
+   "id": "r06c02",
+   "round": 6,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.108",
+   "parent": "r01c02",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.7058,
+   "cation_o_bond": 1.9904,
+   "objectives": [
+    -6.581868489583333,
+    -3.8765463829040527
+   ],
+   "voltage": 3.8765463829040527,
+   "e_above_hull": null,
+   "energy_per_atom": -6.581868489583333,
+   "cell": [
+    7,
+    4
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 8.34
+  },
+  {
+   "id": "r06c03",
+   "round": 6,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.111",
+   "parent": "r00c05",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4525,
+   "cation_o_bond": 2.0323,
+   "objectives": [
+    -6.572644551595052,
+    -3.9066519737243652
+   ],
+   "voltage": 3.9066519737243652,
+   "e_above_hull": null,
+   "energy_per_atom": -6.572644551595052,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 9.8
+  },
+  {
+   "id": "r06c04",
+   "round": 6,
+   "operator": "permute",
+   "detail": "swap sites 3 (Mn) and 5 (Ni)",
+   "parent": "r01c03",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4744,
+   "cation_o_bond": 2.0293,
+   "objectives": [
+    -6.573751449584961,
+    -3.9091798464457193
+   ],
+   "voltage": 3.9091798464457193,
+   "e_above_hull": null,
+   "energy_per_atom": -6.573751449584961,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 6.81
+  },
+  {
+   "id": "r06c05",
+   "round": 6,
+   "operator": "permute",
+   "detail": "swap sites 4 (Co) and 5 (Ni)",
+   "parent": "r01c03",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4689,
+   "cation_o_bond": 2.0276,
+   "objectives": [
+    -6.576446533203125,
+    -3.861919562021891
+   ],
+   "voltage": 3.861919562021891,
+   "e_above_hull": null,
+   "energy_per_atom": -6.576446533203125,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 5.6
+  },
+  {
+   "id": "r07c00",
+   "round": 7,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.136",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4715,
+   "cation_o_bond": 2.0247,
+   "objectives": [
+    -6.575177510579427,
+    -3.8521068890889487
+   ],
+   "voltage": 3.8521068890889487,
+   "e_above_hull": null,
+   "energy_per_atom": -6.575177510579427,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 12.95
+  },
+  {
+   "id": "r07c01",
+   "round": 7,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.138",
+   "parent": "r00c05",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4834,
+   "cation_o_bond": 2.0265,
+   "objectives": [
+    -6.57325553894043,
+    -3.9040732383728027
+   ],
+   "voltage": 3.9040732383728027,
+   "e_above_hull": null,
+   "energy_per_atom": -6.57325553894043,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 13.54
+  },
+  {
+   "id": "r07c02",
+   "round": 7,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.101",
+   "parent": "r00c05",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4533,
+   "cation_o_bond": 2.0319,
+   "objectives": [
+    -6.572715123494466,
+    -3.901711940765381
+   ],
+   "voltage": 3.901711940765381,
+   "e_above_hull": null,
+   "energy_per_atom": -6.572715123494466,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 9.44
+  },
+  {
+   "id": "r07c03",
+   "round": 7,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.110",
+   "parent": "r01c03",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4318,
+   "cation_o_bond": 2.0281,
+   "objectives": [
+    -6.574552536010742,
+    -3.9140575726826987
+   ],
+   "voltage": 3.9140575726826987,
+   "e_above_hull": null,
+   "energy_per_atom": -6.574552536010742,
+   "cell": [
+    6,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 6.87
+  },
+  {
+   "id": "r07c04",
+   "round": 7,
+   "operator": "permute",
+   "detail": "swap sites 3 (Mn) and 5 (Ni)",
+   "parent": "r01c03",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4744,
+   "cation_o_bond": 2.0293,
+   "objectives": [
+    -6.573750813802083,
+    -3.9091760317484536
+   ],
+   "voltage": 3.9091760317484536,
+   "e_above_hull": null,
+   "energy_per_atom": -6.573750813802083,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 6.78
+  },
+  {
+   "id": "r07c05",
+   "round": 7,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.105",
+   "parent": "r01c02",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.609,
+   "cation_o_bond": 1.9962,
+   "objectives": [
+    -6.581582387288411,
+    -3.8810197512308755
+   ],
+   "voltage": 3.8810197512308755,
+   "e_above_hull": null,
+   "energy_per_atom": -6.581582387288411,
+   "cell": [
+    7,
+    4
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 6.39
+  },
+  {
+   "id": "r08c00",
+   "round": 8,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.082",
+   "parent": "r01c02",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4516,
+   "cation_o_bond": 2.0235,
+   "objectives": [
+    -6.577742258707683,
+    -3.862657070159912
+   ],
+   "voltage": 3.862657070159912,
+   "e_above_hull": null,
+   "energy_per_atom": -6.577742258707683,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 6.78
+  },
+  {
+   "id": "r08c01",
+   "round": 8,
+   "operator": "permute",
+   "detail": "swap sites 3 (Mn) and 5 (Co)",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 3.9482,
+   "cation_o_bond": 1.9416,
+   "objectives": [
+    -6.479815165201823,
+    -3.672311305999756
+   ],
+   "voltage": 3.672311305999756,
+   "e_above_hull": null,
+   "energy_per_atom": -6.479815165201823,
+   "cell": [
+    5,
+    4
+   ],
+   "accepted": false,
+   "reason": "duplicate of r03c04",
+   "seconds": 6.21
+  },
+  {
+   "id": "r08c02",
+   "round": 8,
+   "operator": "permute",
+   "detail": "swap sites 4 (Ni) and 5 (Co)",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4508,
+   "cation_o_bond": 2.0339,
+   "objectives": [
+    -6.571816126505534,
+    -3.9027406374613443
+   ],
+   "voltage": 3.9027406374613443,
+   "e_above_hull": null,
+   "energy_per_atom": -6.571816126505534,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 8.98
+  },
+  {
+   "id": "r08c03",
+   "round": 8,
+   "operator": "strain",
+   "detail": "symmetric strain, max |e| = 0.134",
+   "parent": "r00c05",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4636,
+   "cation_o_bond": 2.0293,
+   "objectives": [
+    -6.574375152587891,
+    -3.913067022959391
+   ],
+   "voltage": 3.913067022959391,
+   "e_above_hull": null,
+   "energy_per_atom": -6.574375152587891,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 10.26
+  },
+  {
+   "id": "r08c04",
+   "round": 8,
+   "operator": "permute",
+   "detail": "swap sites 4 (Ni) and 5 (Co)",
+   "parent": "r01c01",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4508,
+   "cation_o_bond": 2.0339,
+   "objectives": [
+    -6.571815490722656,
+    -3.9027393658955893
+   ],
+   "voltage": 3.9027393658955893,
+   "e_above_hull": null,
+   "energy_per_atom": -6.571815490722656,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 8.96
+  },
+  {
+   "id": "r08c05",
+   "round": 8,
+   "operator": "rattle",
+   "detail": "gaussian rattle, sigma = 0.35 A",
+   "parent": "r01c02",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4802,
+   "cation_o_bond": 2.0239,
+   "objectives": [
+    -6.578320821126302,
+    -3.8654723167419434
+   ],
+   "voltage": 3.8654723167419434,
+   "e_above_hull": null,
+   "energy_per_atom": -6.578320821126302,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c02",
+   "seconds": 7.67
+  },
+  {
+   "id": "r09c00",
+   "round": 9,
+   "operator": "permute",
+   "detail": "swap sites 3 (Mn) and 5 (Ni)",
+   "parent": "r01c03",
+   "formula": "Li3MnCoNiO6",
+   "density": 4.4744,
+   "cation_o_bond": 2.0293,
+   "objectives": [
+    -6.573750178019206,
+    -3.9091734886169434
+   ],
+   "voltage": 3.9091734886169434,
+   "e_above_hull": null,
+   "energy_per_atom": -6.573750178019206,
+   "cell": [
+    7,
+    5
+   ],
+   "accepted": false,
+   "reason": "duplicate of r01c03",
+   "seconds": 6.66
+  }
+ ],
+ "plans": [
+  {
+   "round": 0,
+   "operator_weights": {
+    "strain": 0.4,
+    "rattle": 0.4,
+    "permute": 0.2,
+    "substitute": 0.0
+   },
+   "dopants": [
+    "Al",
+    "Fe",
+    "Nb"
+   ],
+   "target_cells": [],
+   "rationale": "fixed policy"
+  },
+  {
+   "round": 1,
+   "operator_weights": {
+    "strain": 0.4,
+    "rattle": 0.4,
+    "permute": 0.2,
+    "substitute": 0.0
+   },
+   "dopants": [
+    "Al",
+    "Fe",
+    "Nb"
+   ],
+   "target_cells": [],
+   "rationale": "fixed policy"
+  },
+  {
+   "round": 2,
+   "operator_weights": {
+    "strain": 0.4,
+    "rattle": 0.4,
+    "permute": 0.2,
+    "substitute": 0.0
+   },
+   "dopants": [
+    "Al",
+    "Fe",
+    "Nb"
+   ],
+   "target_cells": [],
+   "rationale": "fixed policy"
+  },
+  {
+   "round": 3,
+   "operator_weights": {
+    "strain": 0.4,
+    "rattle": 0.4,
+    "permute": 0.2,
+    "substitute": 0.0
+   },
+   "dopants": [
+    "Al",
+    "Fe",
+    "Nb"
+   ],
+   "target_cells": [],
+   "rationale": "fixed policy"
+  },
+  {
+   "round": 4,
+   "operator_weights": {
+    "strain": 0.4,
+    "rattle": 0.4,
+    "permute": 0.2,
+    "substitute": 0.0
+   },
+   "dopants": [
+    "Al",
+    "Fe",
+    "Nb"
+   ],
+   "target_cells": [],
+   "rationale": "fixed policy"
+  },
+  {
+   "round": 5,
+   "operator_weights": {
+    "strain": 0.4,
+    "rattle": 0.4,
+    "permute": 0.2,
+    "substitute": 0.0
+   },
+   "dopants": [
+    "Al",
+    "Fe",
+    "Nb"
+   ],
+   "target_cells": [],
+   "rationale": "fixed policy"
+  },
+  {
+   "round": 6,
+   "operator_weights": {
+    "strain": 0.4,
+    "rattle": 0.4,
+    "permute": 0.2,
+    "substitute": 0.0
+   },
+   "dopants": [
+    "Al",
+    "Fe",
+    "Nb"
+   ],
+   "target_cells": [],
+   "rationale": "fixed policy"
+  },
+  {
+   "round": 7,
+   "operator_weights": {
+    "strain": 0.4,
+    "rattle": 0.4,
+    "permute": 0.2,
+    "substitute": 0.0
+   },
+   "dopants": [
+    "Al",
+    "Fe",
+    "Nb"
+   ],
+   "target_cells": [],
+   "rationale": "fixed policy"
+  },
+  {
+   "round": 8,
+   "operator_weights": {
+    "strain": 0.4,
+    "rattle": 0.4,
+    "permute": 0.2,
+    "substitute": 0.0
+   },
+   "dopants": [
+    "Al",
+    "Fe",
+    "Nb"
+   ],
+   "target_cells": [],
+   "rationale": "fixed policy"
+  },
+  {
+   "round": 9,
+   "operator_weights": {
+    "strain": 0.4,
+    "rattle": 0.4,
+    "permute": 0.2,
+    "substitute": 0.0
+   },
+   "dopants": [
+    "Al",
+    "Fe",
+    "Nb"
+   ],
+   "target_cells": [],
+   "rationale": "fixed policy"
+  }
+ ]
+}

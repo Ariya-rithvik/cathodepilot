@@ -1,0 +1,21 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+data/cache/llm/
+data/cache/call_answers/
+results/rehearsal/
+results/rehearsal_log.txt
+data/memory/
+tests/_watch_tmp/
+.pytest_cache/
+.claude/
+tests/_*/
+# planning notes stay local
+IDEA_RESEARCH.md
+CATHODEPILOT_SPEC.md
+PITCH_AND_PLAN.md
+SUBMISSION_CHECKLIST.md
+VIDEO_SCRIPT.md
+DEVPOST_TEXT.md

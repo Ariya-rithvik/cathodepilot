@@ -1,0 +1,7 @@
+.venv
+.git
+__pycache__
+.env
+data/memory
+data/cache/llm
+results/rehearsal
