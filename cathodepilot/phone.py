@@ -51,11 +51,14 @@ def build_task(question: str, proposed_action: str, reason: str) -> str:
                 f"Reason: {clip(reason)}. I am not changing anything.\" Then ask: \"Did you hear that? Please say yes.\" "
                 "Offer to repeat once if asked. Do not guess the cause. Then say thank you and end the call.")
     return (GUARD + "You are CathodePilot, an automated research assistant calling the project supervisor for approval. "
-            "Speak calmly and clearly in Indian English. Say: \"CathodePilot needs your approval before the next "
-            f"search step. {clip(question)} Proposed action: {clip(proposed_action)}. Reason: {clip(reason)}.\" "
-            "Then ask: \"Do you approve? Please say approve or reject.\" Offer to repeat once if asked. "
-            "If they ask a question you cannot answer, say the details are in the run log. "
-            "Do not argue for the action and do not decide for them. Then say thank you and end the call.")
+            "Speak calmly and clearly in Indian English, one step at a time, and wait for the person after each step. "
+            f"Step 1: say \"This is CathodePilot. {clip(question)} Would you like to hear the details?\" "
+            f"Step 2: when they respond, say \"The reason is: {clip(reason)}\" and ask \"Do you want to know exactly what "
+            "I will do?\" "
+            f"Step 3: when they respond, say \"Proposed action: {clip(proposed_action)}\" and ask \"Do you approve? Please "
+            "say approve or reject.\" If they ask a question you cannot answer, say the details are in the run log, then "
+            "repeat the approve or reject question. Do not argue for the action and do not decide for them. "
+            "After they answer, say thank you and end the call.")
 
 
 class CallE:
