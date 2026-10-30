@@ -1,0 +1,217 @@
+{
+ "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+ "report": "**Audit Report \u2014 archive-oct08 / moqd-oct15**\n\n**Run contents**  \n18 structures, all \u201cOptimized\u201d. Chemical systems: Co-Li-Mn-Ni-O (10), Al-Li-Mn-Ni-O (1), Fe-Li-Mn-Ni-O (1), Li-Mn-Nb-Ni-O (6). Formulas span Li\u2083MnNiXO\u2086 (X=Co,Al,Fe,Nb), Li\u2081\u2080Mn\u2083\u208b\u2084Ni\u2083\u208b\u2084Co\u2083O\u2082\u2080, Li\u2086Mn\u2082Ni\u2082Co\u2082O\u2081\u2083, Li\u2083MnNiCoO\u2087. Only 5/18 have GULP-converged energies. Generations 1, 4, 5 present.\n\n**Results not to trust (with evidence)**  \n- **HIGH**: 13 `output.result` files show synthetic energy columns \u2014 col2 = 12\u00d7atom count, col3 = col1/atoms, col1 vs atom count correlation = \u22120.37 (real total energy should scale ~+1 with cell size). Example: `archive-oct08/00001x00001/output.result` line 1 \u201c-46.5454 144.0000 -3.8788\u201d. **Do not use these as energies until the writer is confirmed.**  \n- **MEDIUM**: 5 structures charge-imbalanced with GULP charges: Li\u2081\u2080Mn\u2084Ni\u2083Co\u2083O\u2082\u2080 (+1), Li\u2081\u2080Mn\u2083Ni\u2083Co\u2084O\u2082\u2080 (\u22121), Li\u2086Mn\u2082Ni\u2082Co\u2082O\u2081\u2083 (\u22122), Li\u2083MnNiCoO\u2087 (\u22122), plus one more. Evidence: POSCAR line 7 in each.  \n- **INFO**: 6 Nb-containing structures balance with GULP charges (Nb=+2) but give +2 net charge with textbook Nb=+5; 2 Co structures use Co=+2 vs usual +3. Domain expert must confirm intended charges.  \n- **MEDIUM**: Two low-density outliers: `moqd-oct15/1x07` (2.52 g/cm\u00b3) and `5x18` (2.29 g/cm\u00b3) vs run median 3.51 \u2014 likely open, unphysical frameworks.\n\n**Descriptor bounds waste**  \nDensity bounds 0\u20135 g/cm\u00b3, 10 bins. Observed range 2.29\u20133.93 g/cm\u00b3 \u2192 only **4 of 10 bins reachable**. Suggested bounds: **2.13\u20134.10 g/cm\u00b3** (10% padding). Current grid wastes 60% of bins.\n\n**Fix first**  \n1. **Resolve the synthetic energy columns** (HIGH) \u2014 identify what produced `output.result` files before any energy-based steering.  \n2. **Tighten density bounds** to 2.13\u20134.10 g/cm\u00b3 (or wider if future candidates may exceed) to use the archive grid efficiently.  \n3. **Validate charge models** with domain expert for Nb/Co oxidation states and correct the 5 charge-imbalanced structures.",
+ "trace": [
+  {
+   "tool": "run_overview",
+   "args": {},
+   "result": {
+    "structures": 18,
+    "by_chem_system": {
+     "Co-Li-Mn-Ni-O": 10,
+     "Al-Li-Mn-Ni-O": 1,
+     "Fe-Li-Mn-Ni-O": 1,
+     "Li-Mn-Nb-Ni-O": 6
+    },
+    "by_formula": {
+     "Li3MnNiCoO6": 5,
+     "Li10Mn4Ni3Co3O20": 1,
+     "Li10Mn3Ni4Co3O20": 1,
+     "Li10Mn3Ni3Co4O20": 1,
+     "Li6Mn2Ni2Co2O13": 1,
+     "Li3MnNiCoO7": 1,
+     "Li3MnNiAlO6": 1,
+     "Li3MnNiFeO6": 1,
+     "Li3MnNiNbO6": 1,
+     "Li3MnNbNiO6": 5
+    },
+    "by_status": {
+     "Optimized": 18
+    },
+    "gulp_converged": 5,
+    "with_energy": 5,
+    "generations": [
+     1,
+     4,
+     5
+    ]
+   }
+  },
+  {
+   "tool": "integrity_checks",
+   "args": {},
+   "result": [
+    {
+     "check": "result_columns_look_synthetic",
+     "severity": "high",
+     "finding": "In 13 output.result files: column 2 == 12 x atom count: True; column 3 == column 1 / atoms: True; correlation of column 1 with atom count: -0.37 (a real total energy grows with cell size, |r| close to 1).",
+     "advice": "Confirm what wrote these files before using them as energies.",
+     "evidence": [
+      {
+       "file": "D:\\cathodepilot\\data\\runs\\archive-oct08\\00001x00001\\output.result",
+       "line": 1,
+       "text": "-46.5454 144.0000 -3.8788"
+      },
+      {
+       "file": "D:\\cathodepilot\\data\\runs\\archive-oct08\\00001x00002\\output.result",
+       "line": 1,
+       "text": "-47.4452 144.0000 -3.9538"
+      },
+      {
+       "file": "D:\\cathodepilot\\data\\runs\\archive-oct08\\00001x00003\\output.result",
+       "line": 1,
+       "text": "-49.4562 480.0000 -1.2364"
+      }
+     ]
+    },
+    {
+     "check": "not_charge_balanced",
+     "severity": "medium",
+     "structure": "archive-oct08/00001x00003",
+     "finding": "Li10Mn4Ni3Co3O20 has net charge +1 with the GULP charges.",
+     "evidence": [
+      {
+       "file": "D:\\cathodepilot\\data\\runs\\archive-oct08\\00001x00003\\output.POSCAR",
+       "line": 7
+      }
+     ]
+    },
+    {
+     "check": "charges_differ_from_textbook",
+     "severity": "info",
+     "structure": "archive-oct08/00001x00004",
+     "finding": "Li10Mn3Ni4Co3O20 balances with the GULP charges but has net charge -1 with common oxidation states (e.g. Co: GULP +2, usual +3).",
+     "advice": "Ask the domain expert whether these charges are intended."
+    },
+    {
+     "check": "not_charge_balanced",
+     "severity": "medium",
+     "structure": "archive-oct08/00001x00005",
+     "finding": "Li10Mn3Ni3Co4O20 has net charge -1 with the GULP charges.",
+     "evidence": [
+      {
+       "file": "D:\\cathodepilot\\data\\runs\\archive-oct08\\00001x00005\\output.POSCAR",
+       "line": 7
+      }
+     ]
+    },
+    {
+     "check": "not_charge_balanced",
+     "severity": "medium",
+     "structure": "archive-oct08/00001x00007",
+     "finding": "Li6Mn2Ni2Co2O13 has net charge -2 with the GULP charges.",
+     "evidence": [
+      {
+       "file": "D:\\cathodepilot\\data\\runs\\archive-oct08\\00001x00007\\output.POSCAR",
+       "line": 7
+      }
+     ]
+    },
+    {
+     "check": "not_charge_balanced",
+     "severity": "medium",
+     "structure": "archive-oct08/00001x00008",
+     "finding": "Li3MnNiCoO7 has net charge -2 with the GULP charges.",
+     "evidence": [
+      {
+       "file": "D:\\cathodepilot\\data\\runs\\archive-oct08\\00001x00008\\output.POSCAR",
+       "line": 7
+      }
+     ]
+    },
+    {
+     "check": "charges_differ_from_textbook",
+     "severity": "info",
+     "structure": "archive-oct08/00001x00012",
+     "finding": "Li3MnNiNbO6 balances with the GULP charges but has net charge +2 with common oxidation states (e.g. Nb: GULP +2, usual +5).",
+     "advice": "Ask the domain expert whether these charges are intended."
+    },
+    {
+     "check": "charges_differ_from_textbook",
+     "severity": "info",
+     "structure": "moqd-oct15/1x07",
+     "finding": "Li3MnNbNiO6 balances with the GULP charges but has net charge +2 with common oxidation states (e.g. Nb: GULP +2, usual +5).",
+     "advice": "Ask the domain expert whether these charges are intended."
+    },
+    {
+     "check": "charges_differ_from_textbook",
+     "severity": "info",
+     "structure": "moqd-oct15/4x48",
+     "finding": "Li3MnNbNiO6 balances with the GULP charges but has net charge +2 with common oxidation states (e.g. Nb: GULP +2, usual +5).",
+     "advice": "Ask the domain expert whether these charges are intended."
+    },
+    {
+     "check": "charges_differ_from_textbook",
+     "severity": "info",
+     "structure": "moqd-oct15/4x52",
+     "finding": "Li3MnNbNiO6 balances with the GULP charges but has net charge +2 with common oxidation states (e.g. Nb: GULP +2, usual +5).",
+     "advice": "Ask the domain expert whether these charges are intended."
+    },
+    {
+     "check": "charges_differ_from_textbook",
+     "severity": "info",
+     "structure": "moqd-oct15/5x15",
+     "finding": "Li3MnNbNiO6 balances with the GULP charges but has net charge +2 with common oxidation states (e.g. Nb: GULP +2, usual +5).",
+     "advice": "Ask the domain expert whether these charges are intended."
+    },
+    {
+     "check": "charges_differ_from_textbook",
+     "severity": "info",
+     "structure": "moqd-oct15/5x18",
+     "finding": "Li3MnNbNiO6 balances with the GULP charges but has net charge +2 with common oxidation states (e.g. Nb: GULP +2, usual +5).",
+     "advice": "Ask the domain expert whether these charges are intended."
+    },
+    {
+     "check": "low_density_outlier",
+     "severity": "medium",
+     "structure": "moqd-oct15/1x07",
+     "finding": "density 2.52 g/cm3 vs run median 3.51; likely an open, unphysical framework.",
+     "evidence": [
+      {
+       "file": "D:\\cathodepilot\\data\\runs\\moqd-oct15\\1x07.got"
+      }
+     ]
+    },
+    {
+     "check": "low_density_outlier",
+     "severity": "medium",
+     "structure": "moqd-oct15/5x18",
+     "finding": "density 2.29 g/cm3 vs run median 3.51; likely an open, unphysical framework.",
+     "evidence": [
+      {
+       "file": "D:\\cathodepilot\\data\\runs\\moqd-oct15\\5x18.got"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tool": "bounds_advice",
+   "args": {
+    "descriptor": "density",
+    "min": 0,
+    "max": 5,
+    "bins": 10
+   },
+   "result": {
+    "configured": [
+     0.0,
+     5.0
+    ],
+    "observed": [
+     2.2937,
+     3.9331
+    ],
+    "n": 18,
+    "bins_reachable_with_observed_range": 4,
+    "bins": 10,
+    "rejected_out_of_bounds": 0,
+    "suggested": [
+     2.13,
+     4.097
+    ],
+    "note": "Suggested bounds pad the observed range by 10% each side. Values outside bounds are rejected by the archive, so widen if future candidates may exceed them."
+   }
+  }
+ ]
+}

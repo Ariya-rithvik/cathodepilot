@@ -9,7 +9,7 @@ Built for the Nebius x NVIDIA Global AI Hackathon, Best Apps and Agents track. M
 | Page | What you get |
 |---|---|
 | **Audit** | Deterministic checks on real XtalOpt / GULP runs. Every finding opens the exact file and line. |
-| **Experiment** | Random vs plain Pareto vs MOME, same seeds, budget and frozen mutation settings, 3 random seeds each, mean ± sd. |
+| **Experiment** | Random vs plain Pareto vs MOME vs Nemotron-steered MOME, same seeds, budget and frozen mutation settings, 3 random seeds each, mean ± sd. |
 | **Agent** | Nemotron reads results through tools and proposes a plan. A validator checks every plan before it runs. |
 | **Shortlist** | Ranked leads with energy and voltage. These are CHGNet surrogate results, for DFT follow-up, not discoveries. |
 | **Run Watch** | A coworker for long runs: detects stalls and failures, saves evidence, phones you before acting, checks the fix, remembers it, warns the next similar run, and writes a report. |
@@ -87,4 +87,17 @@ Known limits: it watches this computer only, not a remote server. A job started 
 
 ## Honest results
 
-From our real runs, 3 seeds each, 60 evaluations: MOME filled 9.0 ± 1.0 cells against 5.3 ± 2.3 for plain Pareto, and it did **not** beat random parent choice (10.3 ± 2.1). 47 to 82% of each budget re-found known structures. CHGNet voltages read about 0.5 V low against the LiCoO2 literature value, so they are for ranking only.
+From our real runs, 3 seeds each, 60 evaluations per run:
+
+| Strategy | Cells filled | MOQD score | Unique valid | Duplicates |
+|---|---|---|---|---|
+| Random parent | 10.3 ± 2.1 | 14.08 ± 2.25 | 32.3 ± 3.8 | 27.7 ± 3.8 |
+| MOME | 9.0 ± 1.0 | 12.62 ± 0.80 | 25.0 ± 7.0 | 35.0 ± 7.0 |
+| Nemotron + MOME | 9.0 ± 1.7 | 12.77 ± 2.81 | 29.7 ± 4.2 | 30.3 ± 4.2 |
+| Plain Pareto | 5.3 ± 2.3 | 7.71 ± 4.48 | 11.0 ± 3.6 | 49.0 ± 3.6 |
+
+MOME beat plain Pareto. It did **not** beat random parent choice. Nemotron steering filled the same number of cells as MOME alone and had about 5 fewer duplicates, but with 3 seeds that is within the spread, so we don't claim it helped. Duplicates remain the largest waste: 46 to 82% of each budget.
+
+The agent did react to evidence: on seed 0 it moved from mostly strain to mostly permute as it saw strain produce duplicates. Its audit report also miscounted one item (it said 5 charge-imbalanced structures, the checks found 4), so the deterministic Audit page is the source of truth, not the model.
+
+CHGNet voltages read about 0.5 V low against the LiCoO2 literature value, so they are for ranking only.
